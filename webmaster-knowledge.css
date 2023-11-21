@@ -254,6 +254,46 @@
 		}
 
 
+/*************************************** COMMENTS header-wrapper ************************************************/	
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*																												*/
+/* 26-8-2023                                                                                    				*/
+/*  overflow should be removed because it creates scroll-bar                                    				*/
+/*                                                                                              				*/
+/* 29-6-2023                                                                                					*/
+/*  replaced whole block in wrappers with header-wrapper                                    					*/
+/*																												*/
+/*	'clear: both' ensures that when two elements run into each other 											*/
+/*		they will not touch each others settings 																*/
+/*                                                                                          					*/
+/* 18-7-2023                                                                                					*/
+/*  it is not clear whether 'overflow: auto' really has a purpose                           					*/
+/*                                                                                          					*/
+/* 21-7-2023                                                                            						*/
+/*	'padding: 0%' ensures the topMenuBar-elements are placed directly at the borders							*/
+/*		padding is in the topMenuBar-elements via element-wrapper												*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*                                                                                          					*/
+/*************************************** COMMENTS header-wrapper ************************************************/	
+	.header-wrapper
+	{
+		clear: both;
+		width: 100%;
+		float: left;
+		display: inline-block;
+/*		box-sizing: border-box;*/
+		padding: 0%
+	}
+
+
 /*************************************** COMMENTS element-wrapper ***********************************************/
 /*                                                                                          					*/
 /* 20-11-2023																									*/
