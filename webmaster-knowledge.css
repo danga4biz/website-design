@@ -434,6 +434,9 @@
 
 /*************************************** COMMENTS bottomLineMiddle **********************************************/
 /*																												*/
+/* 21-11-2023																									*/
+/*	Remove float: left because we want to show the copyright notice in the middle of the screen					*/
+/*																												*/
 /* 16-11-2023																									*/
 /*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
 /*																												*/
@@ -449,7 +452,6 @@
 	#bottomLineMiddle
 	{
 		text-align: center;
-		float: left;
 	}
 
 /* ============================================================================================================ */
