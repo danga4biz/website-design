@@ -138,6 +138,20 @@
 <!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
  	}
 
+/**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+	#centerBarWrapper
+	{
+		border-style: none;
+	}
+
+
 /*************************************** COMMENTS centerBarLeft *************************************************/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
@@ -203,8 +217,6 @@
 		width: 65%;
 /*background: yellow;*/
 	}
-
-
 
 
 
