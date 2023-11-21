@@ -220,6 +220,88 @@
 	}
 
 
+/*************************************** COMMENTS topMenuFlexWrapper ********************************************/
+/*************************************** COMMENTS topContainer **************************************************/
+/*																												*/
+/* 21-11-2023																									*/
+/*	Need to put clear: both because class header-wrapper is not assigned to DIV.								*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*                                                                      	                    				*/
+/* 21-10-2023																									*/
+/*	remove border settings																						*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for topMenuFlexWrapper																	*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	add background color and font variables																		*/
+/*																												*/
+/* 13-9-2023																									*/
+/*	moved float: left to class flex-container																	*/
+/*																												*/
+/* 4-9-2023																										*/
+/*	Remove overflow-auto																						*/
+/*	justify-content: space-around provides half-sized space on the edges										*/
+/*	moved justify-content: space-around to class flex-container													*/
+/*	moved align-items: center to class flex-container															*/
+/*	moved padding-left to class flex-container																	*/
+/*	moved padding-right to class flex-container																	*/
+/*																												*/
+/* 10-9-2022																									*/
+/*	attempt to create responsive 5 columns footer																*/
+/*	align-items versus justify-content: we need them both x- and y-as											*/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container 	*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	justify-content controls where the flex items sits on the main axis											*/
+/*		space-around: distributes all the items evenly along the main axis										*/
+/*			with a bit of space left at either end																*/
+/*		center make the flex items sit in the center of the main axis											*/
+/*	https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox 										*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	align-items controls where the flex items sit on the cross axis												*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlexWrapper ********************************************/
+/*************************************** COMMENTS topContainer **************************************************/
+
+/*	#topContainer*/
+
+	#topMenuFlexWrapper
+	{
+		background: $(topMenuFlexWrapper.BG.Color);
+		color: $(topMenuFlexWrapper.TXT.Color);
+
+		clear: both;
+		width: 100%;
+
+		background-color: var(--topMenuFlexWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--topMenuFlexWrapper-TXT-color);-->
+<!--		font-family: var(--topMenuFlexWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
+/**TEMPLATE-SKIN *********************** COMMENTS topMenuFlexWrapper ********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlexWrapper ********************************************/
+	#topMenuFlexWrapper
+	{
+		border-style: none;
+	}
+
+
 /*************************************** COMMENTS centerBarWrapper **********************************************/
 /*																												*/
 /* 20-11-2023																									*/
