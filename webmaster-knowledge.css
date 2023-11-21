@@ -115,6 +115,39 @@
 <!--		color: var(--outerWrapper-TXT-color);-->
 <!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
+
+
+/*************************************** COMMENTS topLineWrapper ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for bottomLineWrapper																	*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	replaced whole block with header-wrapper																	*/
+/*																												*/
+/* 25-8-2022 added																								*/
+/*																												*/
+/* SEE topLineWrapper for history																				*/
+/* USE in combination with footer-wrapper ??????????????????????????											*/
+/*																												*/
+/*************************************** COMMENTS topLineWrapper ************************************************/
+	#topLineWrapper
+	{
+		background: $(topLineWrapper.BG.Color);
+		color: $(topLineWrapper.TXT.Color);
+		font: $(topLineWrapper.TXT.Font);
+
+		background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--topLineWrapper-TXT-color);-->
+<!--		font-family: var(--topLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
 	
 
 /*************************************** COMMENTS centerBarWrapper **********************************************/
