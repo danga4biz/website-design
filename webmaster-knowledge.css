@@ -812,3 +812,57 @@
 		height: 100%;		
 	}
 
+
+/*************************************** COMMENTS container-items ***********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	add 'padding-right: 5px'																					*/
+/*																												*/
+/* 29-9-2023																									*/
+/*	add 'padding-left: 5px' because in mobile view title was to close to the box								*/
+/*																												*/
+/* 18-9-2023																									*/
+/*	moved 'background-color: #00bfff;' to class container-items													*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper													*/
+/*		and the info-box in bottomContainerWrapper are in full blue												*/
+/*																												*/
+/* 13-9-2023																									*/
+/*	moved float: left to class flex-container																	*/
+/*  Set 'flex: auto' means flex-grow=1, flex-shrink=1, flex-basis=auto                      					*/
+/*																												*/
+/*	remove 'flex-grow: 1' defines how much the item will grow relative to the other								*/
+/*		items in the container																					*/
+/*																												*/
+/* 6-9-2023                                                                                						*/
+/*	remove border                                                                           					*/
+/*																												*/
+/* 30-6-2023																									*/
+/*  definition of the container-items class																		*/
+/*																												*/
+/* 26-8-2023                                                                                    				*/
+/*  overflow should be removed because it creates scroll-bar                                    				*/
+/*																												*/
+/*************************************** COMMENTS container-items ***********************************************/
+	.container-items
+	{
+
+		background-color: #00bfff;
+		
+/*		float: left;*/
+/*		box-sizing: border-box;*/
+/*		flex-grow: 1;*/
+
+		flex: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		background-color: var(--container-items-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--outerWrapper-TXT-color);-->
+<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
