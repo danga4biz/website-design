@@ -79,6 +79,10 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: margin, width, overflow																		*/
 /*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for outerWrapper																		*/
+/*																												*/
 /* 18-5-2023																									*/
 /*	changed overflow: back to overflow: auto because no horizontal scrollbar appears							*/
 /*																												*/
@@ -113,6 +117,27 @@
 <!--		color: var(--outerWrapper-TXT-color);-->
 <!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
+	
+
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for centerBarWrapper																	*/
+/*																												*/
+/* 23-7-2023: replaced whole block with main-wrapper															*/
+/*																												*/
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+	#centerBarWrapper 
+	{
+		background: $(centerBarWrapper.BG.Color); 
+		color: $(centerBarWrapper.TXT.Color);
+		font: $(centerBarWrapper.TXT.Font);
+
+		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--centerBarWrapper-TXT-color);-->
+<!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
+ 	}
+
 
 
 
@@ -123,6 +148,17 @@
 
 	
 /*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*		width: 100%: setting width for centerBarMiddle does not work when width is set in template-skin			*/
+/*		
+/*																												*/
+/* 16-11-2023																									*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: margin, width, overflow																		*/
+
+/* 21-11-2023																									*/
+/*	
 /* 5-10-2023																									*/
 /*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
 /*																												*/
