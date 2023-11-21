@@ -149,7 +149,6 @@
 		border-style: none;
 	}
 
-
 /*************************************** COMMENTS centerBarLeft *************************************************/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
@@ -217,6 +216,50 @@
 	}
 
 
+/*************************************** COMMENTS bottomLineWrapper *********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for bottomLineWrapper																	*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	replaced whole block with header-wrapper																	*/
+/*																												*/
+/* 25-8-2022 added																								*/
+/*																												*/
+/* SEE topLineWrapper for history																				*/
+/* USE in combination with footer-wrapper																		*/
+/*																												*/
+/*************************************** COMMENTS bottomLineWrapper *********************************************/	
+	#bottomLineWrapper 
+	{
+		background: $(bottomLineWrapper.BG.Color);
+		color: $(bottomLineWrapper.TXT.Color);
+		font: $(bottomLineWrapper.TXT.Font);
+
+		background-color: var(--bottomLineWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--bottomLineWrapper-TXT-color);-->
+<!--		font-family: var(--bottomLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+	#centerBarWrapper
+	{
+		border-style: none;
+	}
 
 
 /* ============================================================================================================ */
@@ -254,7 +297,10 @@
 		}
 
 
-/*************************************** COMMENTS header-wrapper ************************************************/	
+/*************************************** COMMENTS header-wrapper ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
@@ -317,6 +363,13 @@
 		padding:  0.5%;
 /*		box-sizing: border-box;*/
 	}
+	
+
+/*************************************** COMMENTS footer-wrapper ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
 
 
 /* ============================================================================================================ */
