@@ -101,10 +101,6 @@
 	{
 		background: $(outerWrapper.BG.Color);
 		font-family: $(outerWrapper.TXT.Font);
-/*		margin: 2px auto;*/
-		margin: auto 25px;
-  		width: auto;
-  		overflow: auto;
 
 <!--		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));-->
 <!--		color: var(--outerWrapper-TXT-color);-->
