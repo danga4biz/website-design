@@ -220,6 +220,123 @@
 	}
 
 
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for centerBarWrapper																	*/
+/*																												*/
+/* 23-7-2023: replaced whole block with main-wrapper															*/
+/*																												*/
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+	#centerBarWrapper 
+	{
+		background: $(centerBarWrapper.BG.Color); 
+		color: $(centerBarWrapper.TXT.Color);
+		font: $(centerBarWrapper.TXT.Font);
+
+		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--centerBarWrapper-TXT-color);-->
+<!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
+ 	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+	#centerBarWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS centerBarLeft *************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor lightgreen, this is the color surrounding the post page							*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarLeft *************************************************/
+	#centerBarLeft 
+	{
+		float: left;
+		width: 10%;
+/*background: lightgreen;*/
+	}
+
+/*************************************** COMMENTS centerBarRight ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor grey, this is the color surrounding the post page									*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarRight ************************************************/
+	#centerBarRight
+	{
+		float: right;
+		width: 20%;
+/*background: #aaa;*/
+	}
+
+/*************************************** COMMENTS centerBarMiddle ***********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor grey, this is the color surrounding the post page									*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarMiddle ***********************************************/	
+	#centerBarMiddle
+	{
+		float: left;
+		width: 70%;
+/*background: yellow;*/
+	}
+
+
 
 
 /*************************************** COMMENTS bottomLineWrapper *********************************************/
