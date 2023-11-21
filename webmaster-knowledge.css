@@ -65,3 +65,40 @@
 	* {
 		box-sizing: border-box;
 	}
+
+
+
+
+/* ============================================================================================================ */
+/* 										DANGA Template CSS definitions - SPECIALS								*/
+/* ============================================================================================================ */
+
+/*************************************** COMMENTS breadcrumbs ***************************************************/	
+/* 1-9-2022 																									*/
+/*	define the a: settings for the breadcrumbs																	*/
+/*																												*/
+/* 1-9-2022																										*/
+/*	link replaced by menu.link																					*/
+/*																												*/
+
+/* 25-7-2023 																									*/
+/*	replace .section-wrapper by breadcrumbs-wrapper																*/
+/*																												*/
+/*************************************** COMMENTS breadcrumbs ***************************************************/	
+	.breadcrumbs-wrapper .breadcrumbs a:link
+		{
+			text-decoration: none;
+			color: $(breadcrumbs.link.color);
+		}
+
+	.breadcrumbs-wrapper .breadcrumbs a:visited
+		{
+			text-decoration: none;
+			color: $(breadcrumbs.link.visited.color);
+		}
+
+	.breadcrumbs-wrapper .breadcrumbs a:hover 
+		{
+			text-decoration: underline;
+			color: $(breadcrumbs.link.hover.color);
+		}
