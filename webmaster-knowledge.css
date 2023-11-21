@@ -163,6 +163,59 @@
 		border-style: none;
 	}
 
+/*************************************** COMMENTS topLineLeft ***************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topLineLeft ***************************************************/
+	#topLineLeft
+	{
+/*		float: left;*/
+		width: 50%;
+	}
+
+/*************************************** COMMENTS topLineRight **************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*************************************** COMMENTS topLineRight **************************************************/
+	#topLineRight
+	{
+		float: right;
+	}
+
+/*************************************** COMMENTS topLineMiddle *************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topLineMiddle *************************************************/
+	#topLineMiddle
+	{
+/*		float: left;*/
+	}
+
 
 /*************************************** COMMENTS centerBarWrapper **********************************************/
 /* 21-10-2023																									*/
