@@ -356,22 +356,3 @@
 }
 
 
-/*************************************** COMMENTS classes .header-wrapper, .footer-wrapper **********************/
-/*																												*/
-/* 6-11-2023																									*/
-/*	apply smaller fonts when mobile device																		*/
-/*		to classes .header-wrapper, .footer-wrapper																*/
-/*		to divs topLineWrapper, bottomLineWrapper, mainCenterMiddle												*/
-/*																												*/
-/*************************************** COMMENTS divs topLineWrapper, bottomLineWrapper, mainCenterMiddle ******/
-
-/* On screens that are 600px or less, set the background color to lightgreen */
-
-@media screen and (max-width: 800px) {
-
-	.header-wrapper, .footer-wrapper, .mainWrapper, #topLineWrapper, #bottomLineWrapper, #middleContainerWrapper, #centerBarWrapper
-	{
-		font-size: 90%;
-	}
-}
-
