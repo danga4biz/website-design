@@ -429,6 +429,9 @@
 		color: $(bottomContainerWrapper.TXT.Color);
 		font: $(bottomContainerWrapper.TXT.Font);
 
+		clear: both;
+		width: 100%;
+
 
 		background-color: var(--bottomContainerWrapper-BG-color, var(--root-BG-color, white ));
 <!--		color: var(--bottomContainerWrapper-TXT-color);-->
