@@ -67,6 +67,56 @@
 	}
 
 
+/*************************************** COMMENTS outerWrapper **************************************************/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*		margin: does not work in template layout when not set in template-skin									*/
+/*		margin: when set in template-skin it does work on the webpage											*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: margin, width, overflow																		*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for outerWrapper																		*/
+/*																												*/
+/* 18-5-2023																									*/
+/*	changed overflow: back to overflow: auto because no horizontal scrollbar appears							*/
+/*																												*/
+/* 25-8-2022																									*/
+/*	outerwrapper.BG.Color not needed																			*/
+/*	min-width: 960px not needed when set in body																*/
+/*																												*/
+/*	remove width 100% to get rid of horizontal scroll bar														*/
+/*	overflow: auto																								*/
+/*		ensures outerWrapper area is filled in the page layout view												*/
+/*		avoids problems with the equal heights approach padding / border settings								*/
+/*	width = 1024px and margin right and left auto > moves the visible area to the middle						*/ 
+/*		of the screen																							*/
+/*		when width is set to auto the browser calculates the width												*/
+/*	now in the body give the sides another color																*/
+/*	added outerWrapper.TXT.Font [26-8-2022]																		*/
+/*																												*/
+/* 3-9-2022																										*/
+/*	changed overflow: auto into overflow: hidden because outerWrapper											*/
+/*		caused a horizontal scrollbar																			*/
+/*																												*/
+/* 18-5-2023																									*/
+/*	changed overflow: back to overflow: auto because no horizontal scrollbar appears							*/
+/*																												*/
+/*************************************** COMMENTS outerWrapper **************************************************/
+	#outerWrapper 
+	{
+		background: $(outerWrapper.BG.Color);
+		font-family: $(outerWrapper.TXT.Font);
+
+<!--		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));-->
+<!--		color: var(--outerWrapper-TXT-color);-->
+<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
 
 
 /* ============================================================================================================ */
