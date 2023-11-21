@@ -1129,7 +1129,7 @@
 /*																												*/
 /*	add flex-wrap: wrap;																						*/
 /*		allow flex items to wrap to make sure the menu width remains FULL container width						*/
-/*													*/
+/*																												*/
 /*************************************** COMMENTS topMenuFlexWrapper .flex-container ****************************/
 
 /* On screens that are 600px or less, set the background color to lightgreen */
@@ -1142,4 +1142,42 @@
 /*			flex-wrap: wrap;	/* allow flex items to wrap */			*/
 	}
 }
+
+
+/*************************************** COMMENTS bottomContainerWrapper .flex-container ************************/
+/*																												*/
+/* 9-06-2023																									*/
+/*	Set flex-direction to column for mobile view																*/
+/*	Moved below d-flyout to ensure it is being used																*/
+/*													*/
+/*************************************** COMMENTS bottomContainerWrapper .flex-container ************************/
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+	@media screen and (max-width: 700px) 
+	{
+		#bottomContainerWrapper.flex-container 
+		{
+			flex-direction: column;
+		}
+
+		#bottomContainerWrapper .container-items
+		{
+			width: 100%;
+		}
+
+/* 11-9-2023 prepared to use d-flyout instead of m-flyout
+
+		.d-flyout ul
+		{
+			flex-direction: column;
+		}
+
+		.d-flyout > ul > li
+		{
+			text-align: left;
+		}
+ 11-9-2023 prepared to use d-flyout instead of m-flyout */
+
+	}
 
