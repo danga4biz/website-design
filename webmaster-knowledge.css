@@ -138,6 +138,72 @@
 <!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
  	}
 
+/*************************************** COMMENTS centerBarLeft *************************************************/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	NOT Needed in template-skin, the width and float parameters are taken over for the template layout.			*/
+/*		parameters: width, float																				*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor lightgreen, this is the color surrounding the post page							*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarLeft *************************************************/
+	#centerBarLeft 
+	{
+		float: left;
+		width: 15%;
+/*background: lightgreen;*/
+	}
+
+/*************************************** COMMENTS centerBarRight ************************************************/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	NOT Needed in template-skin, the width and float parameters are taken over for the template layout.			*/
+/*		parameters: width, float																				*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor grey, this is the color surrounding the post page									*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarRight ************************************************/
+	#centerBarRight
+	{
+		float: right;
+		width: 20%;
+/*background: #aaa;*/
+	}
+
+/*************************************** COMMENTS centerBarMiddle ***********************************************/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	NOT Needed in template-skin, the width and float parameters are taken over for the template layout.			*/
+/*		parameters: width, float																				*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor yellow, this is the color surrounding the post page								*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarMiddle ***********************************************/	
+	#centerBarMiddle
+	{
+		float: left;
+		width: 65%;
+/*background: yellow;*/
+	}
+
 
 
 
