@@ -52,6 +52,8 @@
 }
 
 
+
+
 /* ============================================================================================================ */
 /* 										DANGA Template CSS definitions											*/
 /* ============================================================================================================ */
@@ -68,6 +70,11 @@
 
 
 /*************************************** COMMENTS outerWrapper **************************************************/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*		margin: does not work in template layout when not set in template-skin									*/
+/*		margin: when set in template-skin it does work on the webpage											*/
+/*																												*/
 /* 16-11-2023																									*/
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: margin, width, overflow																		*/
@@ -106,3 +113,42 @@
 <!--		color: var(--outerWrapper-TXT-color);-->
 <!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
+
+
+
+
+/* ============================================================================================================ */
+/* 										SETTINGS FOR MOBILE SCREEN SIZES										*/
+/* ============================================================================================================ */
+
+	
+/*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
+/* 5-10-2023																									*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
+/*																												*/
+/* 5-10-2023                                                                                    				*/
+/*	hide centerBarLeft on mobile screens																		*/
+/*	hide centerBarRight on mobile screens																		*/
+/*																												*/
+/*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+	#centerBarLeft
+	{
+		display: none;
+	}
+
+	#centerBarRight
+	{
+		display: none;
+	}
+
+	#centerBarMiddle
+	{
+		width: 100%;
+	}
+}
+
