@@ -168,7 +168,7 @@
 	#centerBarLeft 
 	{
 		float: left;
-		width: 15%;
+		width: 10%;
 /*background: lightgreen;*/
 	}
 
@@ -212,7 +212,7 @@
 	#centerBarMiddle
 	{
 		float: left;
-		width: 65%;
+		width: 70%;
 /*background: yellow;*/
 	}
 
