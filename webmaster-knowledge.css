@@ -150,6 +150,20 @@
 	}
 	
 
+/**TEMPLATE-SKIN *********************** COMMENTS topLineWrapper ************************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS topLineWrapper ************************************************/
+	#topLineWrapper
+	{
+		border-style: none;
+	}
+
+
 /*************************************** COMMENTS centerBarWrapper **********************************************/
 /* 21-10-2023																									*/
 /*	change color, background, font settings																		*/
