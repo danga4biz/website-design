@@ -1103,28 +1103,3 @@
 }
 
 
-/*************************************** COMMENTS topMenuFlexWrapper .flex-container ****************************/
-/*																												*/
-/* 22-9-2023																									*/
-/*	remove flex-wrap: wrap;	and set 'flex-direction: column														*/
-/*		since topLeftBar is no part of the menu, which is a flex container - d-flyout, 							*/
-/*		but part of topMenuFlex2, which is also a flex-container it works nicer to set 							*/
-/*		the flex-direction of this flex-container to column														*/
-/*																												*/
-/*	add flex-wrap: wrap;																						*/
-/*		allow flex items to wrap to make sure the menu width remains FULL container width						*/
-/*																												*/
-/*************************************** COMMENTS topMenuFlexWrapper .flex-container ****************************/
-
-/* On screens that are 600px or less, set the background color to lightgreen */
-
-@media screen and (max-width: 800px)	{
-
-	#topMenuFlexWrapper.flex-container 
-	{
-		flex-direction: column;
-/*			flex-wrap: wrap;	/* allow flex items to wrap */			*/
-	}
-}
-
-
