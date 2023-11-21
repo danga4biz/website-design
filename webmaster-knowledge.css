@@ -217,6 +217,22 @@
 	}
 
 
+/**TEMPLATE-SKIN *********************** COMMENTS middleContainerWrapper ****************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border that are used for the template layout						*/
+/*	otherwise they are also displayed on the website															*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: border-color, border-top-style, border-width												*/
+/*																												*/
+/*************************************** COMMENTS middleContainerWrapper ****************************************/
+	#middleContainerWrapper
+	{
+		border-style: none;
+	}
+
+
 /*************************************** COMMENTS centerBarWrapper **********************************************/
 /* 21-10-2023																									*/
 /*	change color, background, font settings																		*/
