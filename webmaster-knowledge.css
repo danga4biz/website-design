@@ -254,6 +254,30 @@
 		}
 
 
+/*************************************** COMMENTS element-wrapper ***********************************************/
+/*                                                                                          					*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*	float: left can be removed because need to set it per element												*/
+/*																												*/
+/* 21-7-2023                                                                                					*/
+/*  'padding: 0.5%' ensures the element is shown even when it does not contain text      						*/
+/*  'min-height: 20px' also ensures the Column is shown                                     					*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*																												*/
+/* REMARK: CLASS handles the CSS layout of the topMenuBarLeftColumn		            							*/
+/*																												*/
+/*************************************** COMMENTS element-wrapper ***********************************************/
+	.element-wrapper
+	{
+/*	    	float: left;*/
+		padding:  0.5%;
+/*		box-sizing: border-box;*/
+	}
+
 
 /* ============================================================================================================ */
 /* 										SETTINGS FOR MOBILE SCREEN SIZES										*/
