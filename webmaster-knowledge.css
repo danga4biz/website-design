@@ -151,6 +151,7 @@
 	
 
 /**TEMPLATE-SKIN *********************** COMMENTS topLineWrapper ************************************************/
+/*																												*/
 /* 20-11-2023																									*/
 /*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
 /*	otherwise it is also displayed on the website																*/
@@ -179,7 +180,7 @@
 /*************************************** COMMENTS topLineLeft ***************************************************/
 	#topLineLeft
 	{
-/*		float: left;*/
+		float: left;
 		width: 50%;
 	}
 
@@ -213,11 +214,15 @@
 /*************************************** COMMENTS topLineMiddle *************************************************/
 	#topLineMiddle
 	{
-/*		float: left;*/
+		float: left;
 	}
 
 
 /*************************************** COMMENTS middleContainerWrapper ****************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
 /*                                                                      	                    				*/
@@ -249,6 +254,7 @@
 
 
 /**TEMPLATE-SKIN *********************** COMMENTS middleContainerWrapper ****************************************/
+/*																												*/
 /* 20-11-2023																									*/
 /*	Needed here to REMOVE the settings of the border that are used for the template layout						*/
 /*	otherwise they are also displayed on the website															*/
@@ -265,6 +271,10 @@
 
 
 /*************************************** COMMENTS centerBarWrapper **********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
 /* 21-10-2023																									*/
 /*	change color, background, font settings																		*/
 /*		added variables for centerBarWrapper																	*/
@@ -284,6 +294,7 @@
  	}
 
 /**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
+/*																												*/
 /* 20-11-2023																									*/
 /*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
 /*	otherwise it is also displayed on the website																*/
@@ -297,12 +308,17 @@
 	}
 
 /*************************************** COMMENTS centerBarLeft *************************************************/
+/*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
 /* 16-11-2023																									*/
-/*	NOT Needed in template-skin, the width and float parameters are taken over for the template layout.			*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
 /*																												*/
 /* 5-10-2023																									*/
 /*	remove background collor lightgreen, this is the color surrounding the post page							*/
@@ -319,11 +335,14 @@
 	}
 
 /*************************************** COMMENTS centerBarRight ************************************************/
+/*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
 /* 16-11-2023																									*/
-/*	NOT Needed in template-skin, the width and float parameters are taken over for the template layout.			*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
 /* 5-10-2023																									*/
@@ -341,15 +360,20 @@
 	}
 
 /*************************************** COMMENTS centerBarMiddle ***********************************************/
+/*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
 /* 16-11-2023																									*/
-/*	NOT Needed in template-skin, the width and float parameters are taken over for the template layout.			*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
 /* 5-10-2023																									*/
-/*	remove background collor yellow, this is the color surrounding the post page								*/
+/*	remove background collor grey, this is the color surrounding the post page									*/
 /*																												*/
 /*	23-7-2023																									*/
 /*		added																									*/
@@ -408,6 +432,25 @@
 		border-style: none;
 	}
 
+/*************************************** COMMENTS bottomLineMiddle **********************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS bottomLineMiddle **********************************************/
+	#bottomLineMiddle
+	{
+		text-align: center;
+		float: left;
+	}
 
 /* ============================================================================================================ */
 /* 										DANGA Template CSS definitions - SPECIALS								*/
