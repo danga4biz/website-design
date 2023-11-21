@@ -52,10 +52,8 @@
 }
 
 
-
-
 /* ============================================================================================================ */
-/* 										DANGA Template CSS definitions											*/
+/* 										DANGA Template CSS definitions - LAYOUT									*/
 /* ============================================================================================================ */
 
 
@@ -220,23 +218,13 @@
 
 
 
+
 /* ============================================================================================================ */
 /* 										SETTINGS FOR MOBILE SCREEN SIZES										*/
 /* ============================================================================================================ */
 
 	
 /*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
-/* 20-11-2023																									*/
-/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
-/*		width: 100%: setting width for centerBarMiddle does not work when width is set in template-skin			*/
-/*		
-/*																												*/
-/* 16-11-2023																									*/
-/*	Needed in template-skin to set the parameters for the template layout.										*/
-/*		parameters: margin, width, overflow																		*/
-
-/* 21-11-2023																									*/
-/*	
 /* 5-10-2023																									*/
 /*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
 /*																												*/
