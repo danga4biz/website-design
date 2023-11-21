@@ -396,7 +396,7 @@
 /*************************************** COMMENTS bottomContainerWrapper ****************************************/
 /*																												*/
 /* 21-11-2023																									*/
-/*	Need to put clear: both because class header-wrapper is not assigned to DIV.								*/
+/*	Need to put clear: both because class footer-wrapper is not assigned to DIV.								*/
 /*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
@@ -526,9 +526,8 @@
 	{
 		text-align: center;
 	}
-
-
-
+	
+	
 
 /* ============================================================================================================ */
 /* 										DANGA Template CSS definitions - SPECIALS								*/
@@ -723,9 +722,6 @@
 /*		box-sizing: border-box;*/
 		padding: 0%
 }
-
-
-
 
 
 /*************************************** COMMENTS target-container-erp ******************************************/
