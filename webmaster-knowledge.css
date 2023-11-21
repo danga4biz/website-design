@@ -222,6 +222,75 @@
 
 
 
+/*************************************** COMMENTS bottomLineWrapper *********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for bottomLineWrapper																	*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	replaced whole block with header-wrapper																	*/
+/*																												*/
+/* 25-8-2022 added																								*/
+/*																												*/
+/* SEE topLineWrapper for history																				*/
+/* USE in combination with footer-wrapper																		*/
+/*																												*/
+/*************************************** COMMENTS bottomLineWrapper *********************************************/	
+	#bottomLineWrapper 
+	{
+		background: $(bottomLineWrapper.BG.Color);
+		color: $(bottomLineWrapper.TXT.Color);
+		font: $(bottomLineWrapper.TXT.Font);
+
+		background-color: var(--bottomLineWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--bottomLineWrapper-TXT-color);-->
+<!--		font-family: var(--bottomLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS bottomLineWrapper *********************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS bottomLineWrapper *********************************************/
+	#bottomLineWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS bottomLineMiddle **********************************************/
+/*																												*/
+/* 21-11-2023																									*/
+/*	Remove float: left because we want to show the copyright notice in the middle of the screen					*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS bottomLineMiddle **********************************************/
+	#bottomLineMiddle
+	{
+		text-align: center;
+	}
+	
+	
+
 /* ============================================================================================================ */
 /* 										DANGA Template CSS definitions - SPECIALS								*/
 /* ============================================================================================================ */
