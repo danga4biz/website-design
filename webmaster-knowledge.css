@@ -217,6 +217,37 @@
 	}
 
 
+/*************************************** COMMENTS middleContainerWrapper ****************************************/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*                                                                      	                    				*/
+/*                                                                      	                    				*/
+/* 21-10-2023																									*/
+/*	remove border settings																						*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for middleContainerWrapper																*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	add background color and font variables																		*/
+/*																												*/
+/* 18-10-2023																									*/
+/* container to present the sheets 																				*/
+/*																												*/
+/*************************************** COMMENTS topLineMiddle *************************************************/
+	#middleContainerWrapper
+	{
+		background: $(middleContainerWrapper.BG.Color); 
+		color: $(middleContainerWrapper.TXT.Color);
+		font: $(middleContainerWrapper.TXT.Font);
+
+		background-color: var(--middleContainerWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--middleContainerWrapper-TXT-color);-->
+<!--		font-family: var(--middleContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
 /**TEMPLATE-SKIN *********************** COMMENTS middleContainerWrapper ****************************************/
 /* 20-11-2023																									*/
 /*	Needed here to REMOVE the settings of the border that are used for the template layout						*/
