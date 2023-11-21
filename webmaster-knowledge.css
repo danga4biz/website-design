@@ -102,7 +102,7 @@
 		background: $(outerWrapper.BG.Color);
 		font-family: $(outerWrapper.TXT.Font);
 /*		margin: 2px auto;*/
-		margin: auto 15px;
+		margin: auto 25px;
   		width: auto;
   		overflow: auto;
 
