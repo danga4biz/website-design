@@ -176,7 +176,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
-/*	float: left is set here because it is removed element-wrapper												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
 /*																												*/
 /* 15-9-2023																									*/
 /*	remove float: left because it is already provided by the class element-wrapper								*/
@@ -210,7 +210,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
-/*	float: left is set here because it is removed element-wrapper												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
 /*																												*/
 /* 15-9-2023																									*/
 /*	remove float: left because it is already provided by the class element-wrapper								*/
@@ -423,7 +423,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
-/*	float: left is set here because it is removed element-wrapper												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
 /*																												*/
 /* 5-10-2023																									*/
 /*	remove background collor lightgreen, this is the color surrounding the post page							*/
@@ -475,7 +475,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
-/*	float: left is set here because it is removed element-wrapper												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
 /*																												*/
 /* 5-10-2023																									*/
 /*	remove background collor grey, this is the color surrounding the post page									*/
@@ -615,7 +615,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
-/*	float: left is set here because it is removed element-wrapper												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
 /*																												*/
 /* 15-9-2023																									*/
 /*	remove float: left because it is already provided by the class element-wrapper								*/
