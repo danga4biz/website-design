@@ -1,0 +1,38 @@
+
+/* ============================================================================================================ */
+/* 										W3C FLY-OUT MenuText													*/
+/* ============================================================================================================ */
+
+/*************************************** COMMENTS fly-out menu W3C ******************************* 23-7-2023 ****/
+/*																												*/
+/* https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed 											*/
+/*																												*/
+/*************************************** COMMENTS fly-out menu W3C ******************************* 23-7-2023 ****/
+
+/************************************************************************************************/
+/* CSS code to show and hide the submenus when the parent menu items are hovered				*/
+/*                                                                                              */
+/* ul > li selects all li that are a direct child of ul 										*/
+/* ul li selects all li that are anywhere within (descending as deep as you like) a ul			*/
+/************************************************************************************************/
+/* 6-9-2023																						*/
+/*	remove nav > ul li:hover ul { display: block;}												*/
+/*	is now set in d-flyout > ul > li:hover ul													*/
+/************************************************************************************************/
+nav > ul li ul { display: none; }
+/*nav > ul li:hover ul { display: block;}*/
+
+
+/*************************************** COMMENTS m-menu-middle *************************************************/
+/*																												*/
+/* 30-7-2023                                                                                    				*/
+/*  nav class='m-menu'                                                                          				*/
+/*      Most browsers will display the nav element with the following default values:         					*/
+/*          'display: block'                                                                    				*/
+/* 	Need to check it out - if so the mobile-menu-main li is not needed                      					*/
+/*************************************** COMMENTS m-menu-middle *************************************************/
+	#m-menu-middle
+    {
+        background-color: olive;
+        color: blue;
+    }
