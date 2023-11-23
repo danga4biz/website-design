@@ -108,7 +108,7 @@ z-index: 2;
 /*************************************** COMMENTS m-flyout > ul > li ********************************************/
 /*************************************** OLD COMMENTS m-flyout li ***********************************************/
 /*																												*/
-/*28-9-2023																										*/
+/* 28-9-2023																									*/
 /*	set 'margin-left: 5px' 																						*/
 /*		because padding was removed from .m-flyout ul															*/
 /*	remove 'color: white'																						*/
@@ -136,4 +136,54 @@ z-index: 2;
 /*            padding: 10px;*/
 /*color:  white;*/
 margin: 5px;
+	}
+
+/*************************************** COMMENTS .m-flyout > ul > li ul ****************************************/
+/*																												*/
+/* 28-9-2023																									*/
+/*	set 'margin-left: 5px' 																						*/
+/*		because padding was removed from .m-flyout ul															*/
+/*	by using .m-flyout > ul > li ul 																			*/
+/* 		in case more sub-menus are used all will jump in														*/
+/* 			because the whole box is set to jump in with ul	    												*/
+/*************************************** COMMENTS .m-flyout > ul > li ul ****************************************/
+	.m-flyout > ul > li ul
+	{
+    	margin-left: 15px;
+	}
+
+/*************************************** COMMENTS m-flyout li a *************************************************/
+/*																												*/
+/* 10-9-2023																									*/
+/*	Need to find out what sets the text-align to left ==> it is not here										*/
+/*																												*/
+/* 7-9-2023																										*/
+/*	Remove the padding and set it in m-flyout > ul																*/
+/*	Need to set text-align: left																				*/
+/*		because removed it in mobile-menu-main																	*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to find out what sets the center-align ==> it is not here                          					*/
+/*  Color is set in li a:link                                                               					*/
+/*                                                                                          					*/
+/* 18-july-2023                                                                             					*/
+/*  'display: block' has the same result as (p paragraf) and is needed to: 		            					*/
+/*		- 10-9-2023: ensures the a:hover background setting applies to the whole line							*/
+/*      - set space around the list options 										        					*/
+/*      - avoids the a:hover background fills the topMenuBarRight                           					*/
+/*          when 'overflow: hidden' in 'ul' is not used                                     					*/
+/*  'padding: 16px' sets width and height of the 'a: hover' background				        					*/
+/*																												*/
+/* REMARK: handles the CSS layout of the link 																	*/ 
+/*************************************** COMMENTS .m-flyout > ul > li ul ****************************************/
+	.m-flyout li a
+	{
+		display: block;
+		color: white;
+/*		text-align: center;*/
+/*10-9		text-align: left;*/
+/*		padding: 10px;*/
+		text-decoration: none;
+	/*	color: #FFF;*/
+		color: $(menu.link.color);	
 	}
