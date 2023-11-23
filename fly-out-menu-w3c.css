@@ -36,3 +36,71 @@ nav > ul li ul { display: none; }
         background-color: olive;
         color: blue;
     }
+
+    .m-menu-middle
+    {
+        background-color: yellow;
+		display: none;
+    }
+
+/*************************************** MEDIA SCREEN m-menu-middle *********************************************/
+/*																												*/
+/* 29-9-2023																									*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
+/*																												*/
+/* 7-9-2023																										*/
+/*	z-index: 2 ensure the hamburger menu is always shown on top in mobile										*/
+/*																												*/
+/*************************************** MEDIA SCREEN m-menu-middle *********************************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) { 
+
+	.m-menu-middle
+    {
+    	background-color: lightgreen;
+		display: block;
+		text-align: left;
+z-index: 2;
+    }
+
+	.m-menu-hide
+    {
+		display: none;
+    }
+}
+
+
+/*************************************** BEGIN MEDIA SCREEN m-flyout ************************************************/
+/*																													*/
+/* 29-9-2023																										*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets										*/
+/*																													*/
+/*************************************** BEGN MEDIA SCREEN m-flyout *************************************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+/*************************************** COMMENTS m-flyout ul ***************************************************/
+/*																												*/
+/* 28-9-2023																									*/
+/*	set 'padding: 0' to avoid that sub-menu list item start too much from the left side							*/
+/*		set 'margin-left: 5px' in .m-flyout > ul > li															*/
+/*																												*/
+/* 18-9-2023																									*/
+/*	moved 'background-color: #00bfff;' to class container-items													*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper													*/
+/*		and the info-box in bottomContainerWrapper are in full blue												*/
+/*																												*/
+/*************************************** COMMENTS m-flyout ul ***************************************************/
+	.m-flyout ul
+	{
+		list-style-type: none;
+/*            float:right;*/
+/*		margin: 0;*/
+		padding: 0;
+/*		overflow: hidden;*/
+/*background-color: #00bfff;*/
+	}
