@@ -304,6 +304,26 @@
 		border-style: none;
 	}
 
+/*************************************** COMMENTS topMenuFlex1***************************************************/
+/*																												*/
+/* 23-11-2023																									*/
+/*	topMenuFlex1 replaces topBarLeft 																			*/
+/*		because topBarLeftS showed up in blogger layout and confuses where it came from							*/
+/*		now topBarLeftS is in topBarWrapper																		*/
+/*		now topMenuFlex1S is in topMenuFlexWrapper																*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlex1***************************************************/
+	#topMenuFlex1 
+	{
+		float: left;
+	}
+
 
 /*************************************** COMMENTS middleContainerWrapper ****************************************/
 /*																												*/
