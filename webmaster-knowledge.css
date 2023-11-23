@@ -1,3 +1,4 @@
+
 /* ============================================================================================================ */
 /* 										SETTINGS CSS START 														*/
 /* ============================================================================================================ */
@@ -359,7 +360,6 @@
 		border-style: none;
 	}
 
-
 /*************************************** COMMENTS middleContainer ***********************************************/
 /* 22-11-2023																									*/
 /*	added because element-wrapper is assigned to middleContainer1												*/
@@ -475,7 +475,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
-/*	float: left is set here because it is removed from element-wrapper											*/
+/*	float: left is set here because it is removed element-wrapper												*/
 /*																												*/
 /* 5-10-2023																									*/
 /*	remove background collor grey, this is the color surrounding the post page									*/
@@ -615,7 +615,7 @@
 /*	Needed in template-skin to set the parameters for the template layout.										*/
 /*		parameters: width, float																				*/
 /*																												*/
-/*	float: left is set here because it is removed from element-wrapper											*/
+/*	float: left is set here because it is removed element-wrapper												*/
 /*																												*/
 /* 15-9-2023																									*/
 /*	remove float: left because it is already provided by the class element-wrapper								*/
@@ -1703,3 +1703,6 @@ color: white;
 /* ============================================================================================================ */
 /* 										SETTINGS CSS END 														*/
 /* ============================================================================================================ */
+
+
+
