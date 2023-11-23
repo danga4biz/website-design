@@ -104,3 +104,36 @@ z-index: 2;
 /*		overflow: hidden;*/
 /*background-color: #00bfff;*/
 	}
+
+/*************************************** COMMENTS m-flyout > ul > li ********************************************/
+/*************************************** OLD COMMENTS m-flyout li ***********************************************/
+/*																												*/
+/*28-9-2023																										*/
+/*	set 'margin-left: 5px' 																						*/
+/*		because padding was removed from .m-flyout ul															*/
+/*	remove 'color: white'																						*/
+/*		by default it is not possible to change the color of a list item										*/
+/*																												*/
+/* 7-9-2023																										*/
+/*	Need to remove display: inline-block because in mobile version 												*/
+/*		we do not want list items horizontally																	*/
+/*	Set the margin: 5px to create space between the list items													*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to modify menu-wrapper because we only set li and need to set > ul > li            					*/
+/*      makes a difference because we only want to set the li-elements of the first level   					*/
+/*      and not the li-elements of the sub-level                                            					*/
+/*  We can also set 'text-align: center' then it will align all texts in the li             					*/
+/*      also those in sub-menus, but we set 'text-align: center' in a                       					*/
+/*  Need to remove the color because it is set in 'li a'                                    					*/
+/*																												*/
+/*************************************** COMMENTS m-flyout > ul > li ********************************************/
+	.m-flyout > ul > li
+	{
+/*    	display: inline-block;*/
+/*            float: right;*/
+/*            float: none;*/
+/*            padding: 10px;*/
+/*color:  white;*/
+margin: 5px;
+	}
