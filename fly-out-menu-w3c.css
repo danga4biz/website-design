@@ -146,6 +146,7 @@ margin: 5px;
 /*	by using .m-flyout > ul > li ul 																			*/
 /* 		in case more sub-menus are used all will jump in														*/
 /* 			because the whole box is set to jump in with ul	    												*/
+/*																												*/
 /*************************************** COMMENTS .m-flyout > ul > li ul ****************************************/
 	.m-flyout > ul > li ul
 	{
@@ -174,8 +175,9 @@ margin: 5px;
 /*          when 'overflow: hidden' in 'ul' is not used                                     					*/
 /*  'padding: 16px' sets width and height of the 'a: hover' background				        					*/
 /*																												*/
-/* REMARK: handles the CSS layout of the link 																	*/ 
-/*************************************** COMMENTS .m-flyout > ul > li ul ****************************************/
+/* REMARK: handles the CSS layout of the link 																	*/
+/*																												*/
+/*************************************** COMMENTS m-flyout li a *************************************************/
 	.m-flyout li a
 	{
 		display: block;
@@ -186,4 +188,96 @@ margin: 5px;
 		text-decoration: none;
 	/*	color: #FFF;*/
 		color: $(menu.link.color);	
+	}
+
+/*************************************** COMMENTS m-flyout li.selected a ****************************************/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to find out what the difference is between "li.selected a" AND li a:active         					*/
+/*                                                                                          					*/
+/* 21-7-2023                                                                                					*/
+/*  'color: red' in 'li.selected a sets the color when an option is selected                					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is selected		    			        					*/
+/*************************************** COMMENTS m-flyout li.selected a ****************************************/
+	.m-flyout li.selected a
+	{
+color: yellow;
+	}
+
+/*************************************** COMMENTS m-flyout li a:link ********************************************/
+/*************************************** WAS m-flyout a:link ****************************************************/
+/*																												*/
+/* 1-9-2023																										*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status									*/
+/*	Set the color of a:visited equal to a:link																	*/
+/*	Change a:link into li a:link													        					*/
+/*                                                                                          					*/
+/* 23-8-2023                                                                                					*/
+/*  When we set the color in .menu-flyout li a:link it applies to all links in the menu     					*/
+/*                                                                                          					*/
+/* 17-7-2023                                                                                					*/
+/*  'color: green' in 'li a:link' sets the color of a unvisited li-item with a hyperlink    					*/
+/*																					        					*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	links default settings are:																					*/
+/*		links are underlined																					*/
+/*		unvisited links are blue																				*/
+/*		visited links are purple																				*/
+/*																												*/
+/* REMARK: handles the CSS layout of an unvisited link           					        					*/
+/*																												*/
+/*************************************** COMMENTS m-flyout li a:link ********************************************/
+    .m-flyout li a:link
+    {
+	    color: $(menu.link.color);	
+/*color: green;*/
+color: white;
+    }
+
+/*************************************** COMMENTS m-flyout li a:visited *****************************************/
+/*************************************** WAS m-flyout a:visited *************************************************/
+/*																												*/
+/* 1-9-2023																										*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status									*/
+/*	Set the color of a:visited equal to a:link																	*/
+/*	Change a:visited into li a:visited												        					*/
+/*																					        					*/
+/* 17-7-2023                                                                                					*/
+/*  'color: blue' in 'li a:visited' sets the color of a visited li-item with a hyperlink    					*/
+/*																					        					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of an visited link           					            					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS m-flyout li a:visited *****************************************/
+    .m-flyout li a:visited
+    {
+	    color: $(menu.link.color);	
+/*color: blue;*/
+color: white;
+    }
+
+/*************************************** COMMENTS m-flyout li a:hover *******************************************/
+/*                                                                                          					*/
+/* 28-9-2023																									*/
+/*	remove text-decoration: underline to avoid the arrow is underlined											*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to change the position of a:hover in the list of pseudo classes                    					*/
+/*                                                                                          					*/
+/* 17-7-2023                                                                                					*/
+/*  'background-color: color' ensures the list item when hovered gets another color	        					*/
+/*  'color: red' in 'li a:hover' sets the color when an option is hovered                   					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is hovered		    			        					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS m-flyout li a:hover *******************************************/
+	.m-flyout li a:hover
+	{
+		background-color: #111111;
+/*		text-decoration: underline;*/
+/*		color: #FFB;*/
+		color: $(menu.link.hover.color);
+		color: red;
 	}
