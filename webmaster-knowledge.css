@@ -1,3 +1,168 @@
+/****************************** COMMENTS scrolling table definitiions ***************************/
+/****************************** COMMENTS scrolling table definitiions ***************************/
+
+/****************************** COMMENTS scrollable-table ***************************************/
+/* 10-10-2023																					*/
+/*	moved table definitions from post to here													*/
+/*																								*/
+/* changed border="2" into border="0" and border-collapse from collapse into separate 			*/
+/*		border sets the space around the table													*/
+/*																								*/
+/* set border-spacing to 3 px																	*/
+/*		border-spacing sets the space between cells. The default spaced is 2 px					*/
+/*																								*/
+/* with border="0" and border-spacing="3" a white space between cells is created 				*/
+/*		with acceptable width 																	*/
+/*																								*/
+/* set table-layout to auto																		*/
+/*		table-layout defines the algorithm used to lay out table cells, rows, and columns		*/
+/*		table-layout="auto" is the default, the column width is set by the widest unbreakable 	*/
+/*			content in the cells. The content will dictate the layout							*/
+/*		table-layout="fixed", the table and column width is set by the width of the first		*/
+/*			row of cells																		*/
+/*																								*/
+/* bordercolor on the table itself sets the border of the table and of the cells				*/
+/*		only when border= not set to 0															*/
+/*			so border-color="white" has no effect when border="0"								*/
+/*																								*/
+/* border-color on the class .scrollable-table sets the border color of the table and of the	*/
+/*		cells																					*/
+/*																								*/
+/* if both colors are used then the one from the class is used									*/
+/*																								*/
+/* 2-10-2023 added																				*/
+/*	for complex tables																			*/
+/*																								*/
+/****************************** COMMENTS scrolling-table ****************************************/
+.scrollable-table
+{
+	border: 0;
+	border-collapse: separate;
+	white-space: nowrap;
+	border-color: red;
+	border-spacing: 3px;
+    width: 100%; 
+    text-align: left;	
+} 
+
+.scrollable-table td, .scrollable-table th {
+/*    border:  1px solid;*/
+      padding: 5px;
+/*      min-width: 200px;*/
+/*      background: white;*/
+/*      box-sizing: border-box;*/
+/*      text-align: left;*/
+
+}
+
+/* 2-10-2023 																		*/
+/*	.scrollable thead is here to ensure that two rows are fixed when scrolling down */
+.scrollable-table thead, 
+.scrollable-table thead th , 
+.scrollable-table tfoot th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: DeepSkyBlue;
+/*  background: hsl(20, 50%, 70%);*/
+}
+
+/* fix the head of the first column */
+.scrollable-table thead th:first-child, 
+.scrollable-table tfoot th:first-child {
+  left: 0;
+  z-index: 3;
+}
+
+/* make left column fixed when scrolling */
+.scrollable-table tr > td:first-child {
+    position: -webkit-sticky;
+    position: sticky; 
+    background: LightSkyBlue;
+    left: 0; 
+    
+}
+
+/* make left column fixed when scrolling */
+.scrollable-table tr > th:first-child {
+    position: -webkit-sticky;
+    position: sticky; 
+    background: DeepSkyBlue;
+    left: 0; 
+}
+
+/* set z-indez to 0 to ensure that the data rows do not overlay the header rows */
+.scrollable-table tr td:nth-child(3) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 0;
+    background: LightSkyBlue;
+  border-right: thick double #32a1ce;
+}
+
+/* need to make sure the z-index value is higher than the z-index   */
+/*  of .scrollable-table thead th:first-child                       */
+/*  to avoid the header does not shift to the left                  */
+.scrollable-table tr th:nth-child(3) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 4;
+    background: DeepSkyBlue;
+  border-right: thick double #32a1ce;
+}
+
+/* 13-10-2023																		*/
+/*	added different color odd rows													*/
+.scrollable-table tr:nth-child(odd) 
+{
+    background-color: #d2efff;
+}
+
+/* 13-10-2023																		*/
+/*	ensure that the 2nd column does not have different colors for odd rows			*/
+.scrollable-table tr td:nth-child(2)
+{
+    background: LightSkyBlue;
+}
+
+/****************************** COMMENTS scrolling-table ****************************************/
+/* 2-10-2023 added																				*/
+/*	for simple tables																			*/
+/*																								*/
+/****************************** COMMENTS scrolling-table ****************************************/
+
+/*	.scrolling thead is here to ensure that two rows are fixed when scrolling down */
+.scrolling-table thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* make left column fixed when scrolling */
+.scrolling-table tr :first-of-type{
+    position: -webkit-sticky;
+    position: sticky; 
+    left: 0; 
+}
+
+.scrolling-table tr td:first-of-type {
+    background-color: PowderBlue;
+}
+
+.scrolling-table tr th:first-of-type{
+    background-color: LightSeaGreen;
+}
+
+.scrolling-table td, .scrolling-table th{
+	padding: 5px;
+}
+
+/****************************** COMMENTS scrolling table definitiions ***************************/
+/****************************** COMMENTS scrolling table definitiions ***************************/
 
 /* ============================================================================================================ */
 /* 										SETTINGS CSS START 														*/
