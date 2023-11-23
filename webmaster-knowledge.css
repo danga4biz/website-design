@@ -863,8 +863,8 @@ display: none;
 /*************************************** COMMENTS bottomBarWrapper **********************************************/
 	#bottomBarWrapper 
 	{
-		background: $(topBarWrapper.BG.Color);
-		color: $(topBarWrapper.TXT.Color);
+		background: $(bottomBarWrapper.BG.Color);
+		color: $(bottomBarWrapper.TXT.Color);
 
 display: none;
  	}
