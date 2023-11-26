@@ -23,6 +23,37 @@ nav > ul li ul { display: none; }
 /*nav > ul li:hover ul { display: block;}*/
 
 
+/*************************************** COMMENTS mobile-positionZ **********************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/*		float left ensures the hamburger-menu stays on top														*/
+/*																												*/
+/* 28-8-2023																									*/
+/*	started using mobile-position as class																		*/
+/*																												*/
+/* 6-9-2023																										*/
+/*	remove border																								*/
+/*																												*/
+/*************************************** COMMENTS mobile-positionZ **********************************************/
+	#mobile-positionZ
+	{
+		margin: auto;
+		width: 100%;
+/*	border: 3px solid green;*/
+		float: left;
+	}
+
+	.mobile-positionZ
+	{
+		margin: auto;
+		width: 100%;
+/*	border: 3px solid green;*/
+		float: left;
+	}
+
+
 /*************************************** COMMENTS m-menu-middle *************************************************/
 /*																												*/
 /* 30-7-2023                                                                                    				*/
@@ -72,6 +103,9 @@ z-index: 2;
 }
 
 
+
+/*************************************** BEGIN MEDIA SCREEN m-flyout ************************************************/
+/*																													*/
 /*************************************** BEGIN MEDIA SCREEN m-flyout ************************************************/
 /*																													*/
 /* 29-9-2023																										*/
@@ -281,3 +315,610 @@ color: white;
 		color: $(menu.link.hover.color);
 		color: red;
 	}
+
+/*************************************** COMMENTS m-flyout li a:active ******************************************/
+/*                                                                                          					*/
+/* 23-8-2023                                                                                					*/
+/*  Need to add li a:active to menu-wrapper                                                 					*/
+/*                                                                                          					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is selected		    			        					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS m-flyout li a:active ******************************************/
+	.m-flyout li a:active
+	{
+color: indigo;
+	}
+
+/*************************************** COMMENTS m-flyout > ul > li:hover ul ***********************************/
+/*                                                                                          					*/
+/* 6-9-2023                                                                                						*/
+/*	replaces the nav > ul li:hover ul which was set by fly-out menu W3C                     					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS m-flyout > ul > li:hover ul ***********************************/
+	.m-flyout > ul > li:hover ul
+	{
+		display: block;
+	}
+
+/*************************************** COMMENTS m-flyout > ul *************************************************/
+/*                                                                                          					*/
+/* 28-9-2023																									*/
+/*	remove 'padding: 0'																							*/
+/*	padding is set to 0 in .m-flyout ul																			*/
+/*		padding is replaced by margin-left 																		*/
+/*			on .m-flyout > ul > li > ul for the sub-menu														*/
+/*			on .m-flyout > ul > li for the first menu item														*/
+/*																												*/
+/* 7-9-2023                                                                                						*/
+/*	Set padding: 0 to remove the default left padding that is there for the bullets								*/
+/*	The margin: 0 is to set in .m-flyout > ul > li 																*/
+/*                                                                                          					*/
+/*************************************** COMMENTS m-flyout > ul *************************************************/
+	.m-flyout > ul
+	{
+/*		padding: 0; /* To remove default left padding */*/
+	}
+ 
+/*************************************** COMMENTS .m-flyout > ul > li > a:after *********************************/
+/*                                                                                          					*/
+/* 28-9-2023																									*/
+/*	add dropdown and right arrow																				*/
+/*	See: https://stackoverflow.com/questions/5281556/is-there-a-css-way-to-add-an-arrow-if-a-ul-has-a-ul-child	*/
+/*																												*/
+/* See symbols: https://symbl.cc/en/collections/arrow-symbols/													*/
+/*																												*/
+/*************************************** COMMENTS .m-flyout > ul > li > a:after *********************************/
+/* arrow right */
+.m-flyout > ul > li > a:after {content: '\25BA';}
+/*.m-flyout > ul > li > a:after {margin-left: 5px; content: '\1F892';}*/
+
+.m-flyout li > a:only-child:after {content: '';}
+
+
+/*************************************** COMMENTS containerZ ****************************************************/
+/*                                                                                          					*/
+/* 7-9-2023                                                                                						*/
+/*	removed padding because in mobile view the first LI can not be selected                 					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS containerZ ****************************************************/
+	.containerZ 
+    {
+        position: relative;
+/*        padding: 1.5rem;*/
+    }
+
+}
+
+
+/*************************************** END MEDIA SCREEN m-flyout **************************************************/
+/*																													*/
+/*************************************** END MEDIA SCREEN m-flyout **************************************************/
+
+
+
+/*************************************** BEGIN desktop menu layout d-flyout *****************************************/
+/* desktop menu layout 																								*/
+/*************************************** BEGIN desktop menu layout d-flyout *****************************************/
+/*                                                                                          						*/
+/* 29-9-2023																										*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets										*/
+/*																													*/
+/*************************************** BEGIN desktop menu layout d-flyout******************************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and NOT (max-width: 800px) {
+
+/*************************************** COMMENTS d-flyout ul ***************************************************/
+/*                                                                                          					*/
+/* 28-9-2023																									*/
+/*	remove 'display: flex'																						*/
+/*		display: flex is set in class flex-container															*/
+/*		add the class flex-container to the ul																	*/
+/*																												*/
+/* 24-9-2023																									*/
+/*	set box-sizing: border-box; on an element to include the padding and border 								*/
+/*		in the width and height																					*/
+/*																												*/
+/* 21-9-2023																									*/
+/*	Set 'align-items: center' to ensure the icon aligns with the other menu-options								*/
+/*																												*/
+/* 18-9-2023																									*/
+/*	moved 'background-color: #00bfff;' to class container-items													*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper													*/
+/*		and the info-box in bottomContainerWrapper are in full blue												*/
+/*																												*/
+/* 8-9-2023                                                                                 					*/
+/*  Set 'display: flex' and 'flex: auto' to ensure the items in the drop-down columns       					*/
+/*      do not break                                                                        					*/
+/*  Set 'display: flex' in d-flyout ul                                                      					*/
+/*  Need to set 'flex: auto' means flex-grow=1, flex-shrink=1, flex-basis=auto              					*/
+/*      in d-flyout > ul > li                                                               					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout ul ***************************************************/
+	.d-flyout ul
+	{
+		list-style-type: none;		
+/*            float:right;*/
+		margin: 0;
+		padding: 0;
+/*		overflow: hidden;*/
+/*background-color: #00bfff;*/
+/*        background-color: yellow;*/
+/*display: flex;*/
+align-items: center;
+box-sizing: border-box;
+	}
+
+/*************************************** COMMENTS d-flyout > ul > li ********************************************/
+/*************************************** WAS d-flyout li ********************************************************/
+/*                                                                                          					*/
+/* 27-9-2023																									*/
+/* 	to avoid that the menu bar stretches each time a larger of heigher item is hovered							*/
+/*		set the border parameters on '.d-flyout > ul > li' with 												*/
+/*			border-bottom-color: transparent and border-top-color: transparent									*/
+/*	to bring back the borders set the border back in '.d-flyout > ul > li:hover'								*/
+/*		set the border-bottom-color: initial to set back the original color										*/
+/*		set the border-top-color: initial to set back the original color										*/
+/*																												*/
+/* 24-9-2023																									*/
+/*	remove display: inline-block																				*/
+/*		not needed when display: flex and flex: auto is used													*/
+/*																												*/
+/* 11-9-2023																									*/
+/*	Moved 'text-align: center' from d-flyout li a																*/
+/*																												*/
+/* 8-9-2023                                                                                 					*/
+/*  Set 'flex: auto' means flex-grow=1, flex-shrink=1, flex-basis=auto                      					*/
+/*  Need to set 'display: flex' in d-flyout ul                                              					*/
+/*                                                                                          					*/
+/* 23-8-2023                                                                                					*/
+/*  Need to modify menu-wrapper because we only set li and need to set > ul > li            					*/
+/*      makes a difference because we only want to set the li-elements of the first level   					*/
+/*      and not the li-elements of the sub-level                                            					*/
+/*  We can also set 'text-align: center' then it will align all texts in the li             					*/
+/*      also those in sub-menus, but we set 'text-align: center' in a                       					*/
+/*  Need to remove the color because it is set in 'li a'                                    					*/
+/*                                                                                          					*/
+/* 25-8-2022                                                                                					*/
+/*  'display: inline-block' ensures the list options are displayed horizontally 	        					*/
+/*  'float: none' provides space between menu options                                       					*/
+/*                                                                                          					*/
+/* 18-july-2023                                                                             					*/
+/*  'float: right' is not needed in ul because is already set in topMenuBarRight            					*/
+/*  'padding: 10px' sets the space around the list options                                  					*/
+/*  'float: none' is not needed because:                                                    					*/
+/*      - space is set by 'display: block' in 'li a:link'                                   					*/
+/*      OR the 'padding: 10px' in 'li'                                                    						*/
+/*  'color: white' in li sets the color of all the li-items								    					*/
+/*      color in 'li a:hover' sets the color when an option is hovered                      					*/
+/*      color in 'li a:link' sets the color of a li-item with a hyperlink                   					*/
+/*      color in 'li a' sets the color of the item in (a-tag)                               					*/
+/*                                                                                          					*/
+/* REMARK: li handles the CSS layout of each list-item															*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout > ul > li ********************************************/
+	.d-flyout > ul > li
+	{
+/*    	display: inline-block;*/
+/*            float: right;*/
+/*            float: none;*/
+/*            padding: 10px;*/
+position: relative;
+flex: auto;
+text-align: center;
+border-bottom-color: transparent;
+	border-bottom-style: solid;
+	border-bottom-width: thick;
+border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: thin;
+	}
+
+/*************************************** COMMENTS d-flyout li a *************************************************/
+/*                                                                                          					*/
+/* 11-9-2023																									*/
+/*	Moved 'text-align: center' to d-flyout > ul > li															*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  'text-align: center ' aligns the labels of the columns														*/
+/*  Color is set in li a:link                                                               					*/
+/*                                                                                          					*/
+/* 18-july-2023                                                                             					*/
+/*  'display: block' has the same result as (p paragraf) and is needed to: 		            					*/
+/*      - set space around the list options 										        					*/
+/*      - avoids the a:hover background fills the topMenuBarRight                           					*/
+/*          when 'overflow: hidden' in 'ul' is not used                                     					*/
+/*  'padding: 16px' sets width and height of the 'a: hover' background				        					*/
+/*																												*/
+/* REMARK: handles the CSS layout of the link 																	*/
+/*																												*/
+/*************************************** COMMENTS d-flyout li a *************************************************/
+	.d-flyout li a
+	{
+		display: block;
+/*		color: white;*/
+/*		text-align: center;*/
+		padding: 10px;
+		text-decoration: none;
+	/*	color: #FFF;*/
+/*		color: $(menu.link.color);	*/
+	}
+
+/*************************************** COMMENTS .d-flyout > ul > li > a ***************************************/
+/*                                                                                          					*/
+/* 24-9-2023																									*/
+/*	transtion: color .2s linear; ensure the color of the top-label fades in										*/
+/*		the color is set in .d-flyout li a:hover																*/	
+/*																												*/
+/*************************************** COMMENTS .d-flyout > ul > li > a ***************************************/
+	.d-flyout > ul > li > a
+	{
+		transition: color .2s linear;
+	}
+
+/*************************************** COMMENTS d-flyout li.selected a ****************************************/
+/*                                                                                          					*/
+/* 29-8-2023 need to add li.selected a but not sure when it is used 											*/
+/*	So for now remove it																						*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to find out what the difference is between "li.selected a" AND li a:active         					*/
+/*                                                                                          					*/
+/* 21-7-2023                                                                                					*/
+/*  'color: red' in 'li.selected a sets the color when an option is selected                					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is selected		    			        					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout li.selected a ****************************************/
+/*
+	.d-flyout li.selected a
+	{
+color: yellow;
+	}
+*/
+
+/*************************************** COMMENTS d-flyout pseudo classes ***************************************/
+/*                                                                                          					*/
+/* a:hover MUST come after a:link and a:visited in the CSS definition to be effective!      					*/
+/* a:active MUST come after a:hover in the CSS definition to be effective!                  					*/
+/*                                                                                          					*/
+/*  https://www.w3schools.com/css/css_pseudo_classes.asp                                    					*/
+/*                                                                                          					*/
+/* NEED TO CHANGE THE ORDER OF THE PSEUDO CLASSES IN MENU_WRAPPER                           					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout pseudo classes ***************************************/
+
+/*************************************** COMMENTS d-flyout li a:link ********************************************/
+/*************************************** COMMENTS d-flyout a:link ***********************************************/
+/*                                                                                          					*/
+/* 1-9-2023																										*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status									*/
+/*	Set the color of a:visited equal to a:link																	*/
+/*	Change a:link into li a:link													        					*/
+/*                                                                                          					*/
+/* 23-8-2023                                                                                					*/
+/*  When we set the color in .menu-flyout li a:link it applies to all links in the menu     					*/
+/*                                                                                          					*/
+/* 17-7-2023                                                                                					*/
+/*  'color: green' in 'li a:link' sets the color of a unvisited li-item with a hyperlink    					*/
+/*																					        					*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	links default settings are:																					*/
+/*		links are underlined																					*/
+/*		unvisited links are blue																				*/
+/*		visited links are purple																				*/
+/*																												*/
+/* REMARK: handles the CSS layout of an unvisited link           					        					*/
+/*																												*/
+/*************************************** COMMENTS d-flyout li a:link ********************************************/
+    .d-flyout li a:link
+    {
+	    color: $(menu.link.color);	
+color: white;
+    }
+
+/*************************************** COMMENTS d-flyout li a:visited *****************************************/
+/*																												*/
+/* 30-8-2023																									*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status									*/
+/*	Set the color of a:visited equal to a:link																	*/
+/*																					        					*/
+/* 17-7-2023                                                                                					*/
+/*  'color: blue' in 'li a:visited' sets the color of a visited li-item with a hyperlink    					*/
+/*																					        					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of an visited link           					            					*/
+/*																												*/
+/*************************************** COMMENTS d-flyout li a:visited *****************************************/
+    .d-flyout li a:visited
+    {
+	    color: $(menu.link.color);	
+/*color: blue;*/
+color: white;
+    }
+
+/*************************************** COMMENTS d-flyout li a:hover *******************************************/
+/*																												*/
+/* 28-9-2023																									*/
+/*	remove text-decoration: underline																			*/
+/*		to avoid the arrow down is also underlined																*/
+/*																												*/
+/* 25-9-2023																									*/
+/*	remove background-color																						*/
+/*		add border-bottom-style and width to 'd-flyout > ul > li:hover											*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to change the position of a:hover in the list of pseudo classes                    					*/
+/*                                                                                          					*/
+/* 17-7-2023                                                                                					*/
+/*  'background-color: color' ensures the list item when hovered gets another color	        					*/
+/*  'color: red' in 'li a:hover' sets the color when an option is hovered                   					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is hovered		    			        					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout li a:hover *******************************************/
+	.d-flyout li a:hover
+	{
+/*		background-color: #111111;*/
+/*		text-decoration: underline;*/
+/*		color: #FFB;*/
+		color: $(menu.link.hover.color);
+		color: red;
+	}
+
+/*************************************** COMMENTS d-flyout li a:active ******************************************/
+/*                                                                                          					*/
+/* 23-8-2023                                                                                					*/
+/*  Need to add li a:active to menu-wrapper                                                 					*/
+/*                                                                                          					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is selected		    			        					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout li a:active ******************************************/
+	.d-flyout li a:active
+	{
+color: indigo;
+	}
+
+/*************************************** COMMENTS d-flyout > ul > li > ul ***************************************/
+/*                                                                                          					*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for d-flyout-dropdown-BG-color															*/
+/*		removed hardcoded background-color																		*/
+/*																												*/
+/* 28-9-2023																									*/
+/*	remove list-style-type: none																				*/
+/*		is already set in 'd-flyout ul'																			*/
+/*	'display: none' ensures the list box in the dropdown item is not shown 										*/
+/*		the list box is shown when hovering over the list item													*/
+/*		and set with 'display: block'in .d-flyout > ul > li:hover::after										*/
+/*																												*/
+/* 25-9-2023																									*/
+/*	set margin-top: 15px creates space between top level items and their list box								*/
+/*		need to add '.n-flyout > ul > li:hover::after' to fill up the gap										*/
+/*			otherwise when hovering from top item to list box the mouse looses focus							*/
+/*			and the list box vanishes																			*/
+/*																												*/
+/* 8-9-2023                                                                                 					*/
+/*  Add 'fonts-size: smaller' to make the drop down column smaller than the containing      					*/
+/*      parent .d-flyout > ul > li                                                          					*/
+/*                                                                                          					*/
+/* 30-8-2023                                                                                					*/
+/*  z-index ensures the drop down menu is shown overlaying other contexts                   					*/
+/*		https://developer.mozilla.org/en-US/docs/Web/CSS/z-index												*/
+/*                                                                                          					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is selected		    			        					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout > ul > li > ul ***************************************/
+	.d-flyout > ul > li > ul 
+    {
+/*		list-style-type: none;		*/
+		display: none;
+		position: absolute;
+		padding: 0;
+		margin: 0;
+/* 21-10-2023		background-color: #036;*/
+        left: 0;
+        right: 0;
+z-index: 2;
+font-size: smaller;
+margin-top: 15px;
+	background-color: var(--d-flyout-dropdown-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--d-flyout-dropdown-TXT-color);-->
+<!--		font-family: var(--d-flyout-dropdown-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+/*************************************** COMMENTS .d-flyout > ul > li:hover::after ******************************/
+/*                                                                                          					*/
+/* 25-9-2023																									*/
+/*  add li:hover::after 																						*/
+/*      this adds an element between the first li and the dropdown list 										*/
+/*      so when hovering down the mouse does not loose focus            										*/
+/*			need to set margin-top: 15px in 'd-flyout > ul > li > ul'											*/
+/*																												*/
+/*************************************** COMMENTS .d-flyout > ul > li:hover::after ******************************/
+	.d-flyout > ul > li:hover::after
+	{
+		content:'';
+		display:block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+/*		left:0;*/
+/*		right:0;*/
+/*		z-index: 1;*/
+/*		cursor:pointer;*/
+/*	background-color: orange;*/
+	}
+
+    .d-flyout > ul > li > ul > li 
+    {
+        text-align: center;
+    }
+
+    .d-flyout > ul > li.open > ul 
+    {
+		display: block;
+	}
+
+/*************************************** COMMENTS d-flyout > ul > li > ul a *************************************/
+/*																												*/
+/* 24-9-2023																									*/
+/*	border-bottom-width: 1px REMOVED NOT CLEAR WHY THIS IS SET													*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout > ul > li > ul a *************************************/
+	.d-flyout > ul > li > ul a
+    {
+/*		border-bottom-width: 1px;*/
+	}
+
+/*************************************** COMMENTS d-flyout > ul > li:hover ul ***********************************/
+/*																												*/
+/* 6-9-2023                                                                                						*/
+/*	replaces the nav > ul li:hover ul which was set by fly-out menu W3C                     					*/
+/*                                                                                          					*/
+/*************************************** COMMENTS d-flyout > ul > li:hover ul ***********************************/
+	.d-flyout > ul > li:hover ul
+	{
+		display: block;
+	}
+
+/*************************************** COMMENTS .d-flyout > ul > li:hover *************************************/
+/*                                                                                          					*/
+/* 27-9-2023																									*/
+/* 	to avoid that the menu bar stretches each time a larger of heigher item is hovered							*/
+/*		set the border parameters on '.d-flyout > ul > li' with 												*/
+/*			border-bottom-color: transparent and border-top-color: transparent									*/
+/*	to bring back the borders set the border back in '.d-flyout > ul > li:hover'								*/
+/*		set the border-bottom-color: initial to set back the original color										*/
+/*		set the border-top-color: initial to set back the original color										*/
+/*																												*/
+/* 25-9-2023																									*/
+/*	remove background-color																						*/
+/*																												*/
+/* 24-9-2023																									*/
+/*	border-bottom-width and style set to accentuate the column selected											*/
+/*																												*/
+/* 22-9-2023                                                                                					*/
+/*	add background: #111111 to keep the focus of the menu-column visible										*/
+/*                                                                                          					*/
+/*************************************** COMMENTS .d-flyout > ul > li:hover *************************************/
+	.d-flyout > ul > li:hover
+	{
+/*		background-color: #111111;*/
+border-bottom-color: initial;
+	border-bottom-style: solid;
+	border-bottom-width: thick;
+border-top-color: initial;
+    border-top-style: solid;
+    border-top-width: thin;
+	}
+
+/*************************************** COMMENTS .d-flyout > ul > li > a:after *********************************/
+/*                                                                                          					*/
+/* 28-9-2023																									*/
+/*	add dropdown and right arrow																				*/
+/*	See: https://stackoverflow.com/questions/5281556/is-there-a-css-way-to-add-an-arrow-if-a-ul-has-a-ul-child	*/
+/*																												*/
+/* See symbols: https://symbl.cc/en/collections/arrow-symbols/													*/
+/*                                                                                          					*/
+/*************************************** COMMENTS .d-flyout > ul > li > a:after *********************************/
+/* arrow right */
+	.d-flyout > ul > li > a:after {content: '\25BA';}
+
+/* arrow down */
+/*.d-flyout > ul > li > a:after {content: '\25BC';}*/
+	.d-flyout > ul > li > a:after {content: '\1F893';}
+
+	.d-flyout li > a:only-child:after {content: '';}
+
+}
+
+
+/*************************************** END desktop menu layout d-flyout *******************************************/
+/* desktop menu layout 																								*/
+/*************************************** END desktop menu layout d-flyout *******************************************/
+
+
+
+/*************************************** COMMENTS mobile-menu-main li********************************************/
+/*                                                                                          					*/
+/* 29-8-2023                                                                                    				*/
+/*  If we remove padding then the desktop menu is shown full-width and on top                   				*/
+/*                                                                                              				*/
+/*  Moved the containerZ under m-flyout to hide it in desktop                                   				*/
+/*      then the desktop menu is shown full-width and on top                                    				*/
+/*                                                                                              				*/
+/*  Read more about padding/ 1.5rem: https://tailwindcss.com/docs/padding                       				*/
+/*                                                                                          					*/
+/*************************************** COMMENTS mobile-menu-main li********************************************/
+/*
+.containerZ {
+  position: relative;
+  padding: 1.5rem;
+}
+*/
+
+.menu-toggleZ {
+  position: absolute;
+  right: 1.5rem;
+  top: 49%;
+  transform: translate(0, -50%);
+  height: 26px;
+  width: 29px;
+
+  &, &:hover {
+    color: #000;
+  }
+}
+
+/*************************************** COMMENTS .menu-toggle-barZ  ********************************************/
+/*                                                                                          					*/
+/* 6-11-2023																									*/
+/*	change background-color from red to black 																	*/
+/*	change height of the vertical bars from 4px into 3px														*/
+/*																												*/
+/*	NEED TO CHANGE THE background-color of .m-menu-middle														*/
+/*                                                                                          					*/
+/*************************************** COMMENTS .menu-toggle-barZ  ********************************************/
+.menu-toggle-barZ {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  right: 0;
+  width: 100%;
+/*	height: 4px;*/
+	height: 3px;
+  border-radius: 4px;
+/*	background-color: red;*/
+	background-color: black;
+  transition: all 0.3s ease;
+
+  &.menu-toggle-bar--topZ {
+    transform: translate(0, -8px);
+  }
+  &.menu-toggle-bar--middleZ {
+  }
+  &.menu-toggle-bar--bottomZ {
+    transform: translate(0, 8px);
+  }
+
+  .nav-openZ & {
+    &.menu-toggle-bar--topZ {
+      transform: translate(0, 0) rotate(45deg);
+    }
+    &.menu-toggle-bar--middleZ {
+      opacity: 0;
+    }
+    &.menu-toggle-bar--bottomZ {
+      transform: translate(0, 0) rotate(-45deg);
+    }
+  }
+}
+
