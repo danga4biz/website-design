@@ -1,0 +1,1674 @@
+
+
+/* ============================================================================================================ */
+/* 										SETTINGS CSS START 														*/
+/* ============================================================================================================ */
+
+
+/* ============================================================================================================ */
+/* 										DANGA Template CSS definitions - LAYOUT									*/
+/* ============================================================================================================ */
+
+
+/*************************************** COMMENTS box-sizing ****************************************************/
+/* 16-11-2023																									*/
+/*	set box-sizing: border-box globally																			*/
+/*																												*/
+/*************************************** COMMENTS box-sizing ****************************************************/
+	* {
+		box-sizing: border-box;
+	}
+
+
+/*************************************** COMMENTS outerWrapper **************************************************/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*		margin: does not work in template layout when not set in template-skin									*/
+/*		margin: when set in template-skin it does work on the webpage											*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: margin, width, overflow																		*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for outerWrapper																		*/
+/*																												*/
+/* 18-5-2023																									*/
+/*	changed overflow: back to overflow: auto because no horizontal scrollbar appears							*/
+/*																												*/
+/* 25-8-2022																									*/
+/*	outerwrapper.BG.Color not needed																			*/
+/*	min-width: 960px not needed when set in body																*/
+/*																												*/
+/*	remove width 100% to get rid of horizontal scroll bar														*/
+/*	overflow: auto																								*/
+/*		ensures outerWrapper area is filled in the page layout view												*/
+/*		avoids problems with the equal heights approach padding / border settings								*/
+/*	width = 1024px and margin right and left auto > moves the visible area to the middle						*/ 
+/*		of the screen																							*/
+/*		when width is set to auto the browser calculates the width												*/
+/*	now in the body give the sides another color																*/
+/*	added outerWrapper.TXT.Font [26-8-2022]																		*/
+/*																												*/
+/* 3-9-2022																										*/
+/*	changed overflow: auto into overflow: hidden because outerWrapper											*/
+/*		caused a horizontal scrollbar																			*/
+/*																												*/
+/* 18-5-2023																									*/
+/*	changed overflow: back to overflow: auto because no horizontal scrollbar appears							*/
+/*																												*/
+/*************************************** COMMENTS outerWrapper **************************************************/
+	#outerWrapper 
+	{
+		background: $(outerWrapper.BG.Color);
+		font-family: $(outerWrapper.TXT.Font);
+
+<!--		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));-->
+<!--		color: var(--outerWrapper-TXT-color);-->
+<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
+/*************************************** COMMENTS topLineWrapper ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for bottomLineWrapper																	*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	replaced whole block with header-wrapper																	*/
+/*																												*/
+/* 25-8-2022 added																								*/
+/*																												*/
+/* SEE topLineWrapper for history																				*/
+/* USE in combination with footer-wrapper ??????????????????????????											*/
+/*																												*/
+/*************************************** COMMENTS topLineWrapper ************************************************/
+	#topLineWrapper
+	{
+		background: $(topLineWrapper.BG.Color);
+		color: $(topLineWrapper.TXT.Color);
+		font: $(topLineWrapper.TXT.Font);
+
+		background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--topLineWrapper-TXT-color);-->
+<!--		font-family: var(--topLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+	
+
+/**TEMPLATE-SKIN *********************** COMMENTS topLineWrapper ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS topLineWrapper ************************************************/
+	#topLineWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS topLineLeft ***************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topLineLeft ***************************************************/
+	#topLineLeft
+	{
+		float: left;
+		width: 50%;
+	}
+
+/*************************************** COMMENTS topLineRight **************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*************************************** COMMENTS topLineRight **************************************************/
+	#topLineRight
+	{
+		float: right;
+	}
+
+/*************************************** COMMENTS topLineMiddle *************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topLineMiddle *************************************************/
+	#topLineMiddle
+	{
+		float: left;
+	}
+
+
+/*************************************** COMMENTS topMenuFlexWrapper ********************************************/
+/*************************************** COMMENTS topContainer **************************************************/
+/*																												*/
+/* 21-11-2023																									*/
+/*	Need to put clear: both because class header-wrapper is not assigned to DIV.								*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*                                                                      	                    				*/
+/* 21-10-2023																									*/
+/*	remove border settings																						*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for topMenuFlexWrapper																	*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	add background color and font variables																		*/
+/*																												*/
+/* 13-9-2023																									*/
+/*	moved float: left to class flex-container																	*/
+/*																												*/
+/* 4-9-2023																										*/
+/*	Remove overflow-auto																						*/
+/*	justify-content: space-around provides half-sized space on the edges										*/
+/*	moved justify-content: space-around to class flex-container													*/
+/*	moved align-items: center to class flex-container															*/
+/*	moved padding-left to class flex-container																	*/
+/*	moved padding-right to class flex-container																	*/
+/*																												*/
+/* 10-9-2022																									*/
+/*	attempt to create responsive 5 columns footer																*/
+/*	align-items versus justify-content: we need them both x- and y-as											*/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container 	*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	justify-content controls where the flex items sits on the main axis											*/
+/*		space-around: distributes all the items evenly along the main axis										*/
+/*			with a bit of space left at either end																*/
+/*		center make the flex items sit in the center of the main axis											*/
+/*	https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox 										*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	align-items controls where the flex items sit on the cross axis												*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlexWrapper ********************************************/
+/*************************************** COMMENTS topContainer **************************************************/
+
+/*	#topContainer*/
+
+	#topMenuFlexWrapper
+	{
+		background: $(topMenuFlexWrapper.BG.Color);
+		color: $(topMenuFlexWrapper.TXT.Color);
+
+		clear: both;
+		width: 100%;
+
+		background-color: var(--topMenuFlexWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--topMenuFlexWrapper-TXT-color);-->
+<!--		font-family: var(--topMenuFlexWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
+/**TEMPLATE-SKIN *********************** COMMENTS topMenuFlexWrapper ********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlexWrapper ********************************************/
+	#topMenuFlexWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS topMenuFlex1***************************************************/
+/*																												*/
+/* 23-11-2023																									*/
+/*	topMenuFlex1 replaces topBarLeft 																			*/
+/*		because topBarLeftS showed up in blogger layout and confuses where it came from							*/
+/*		now topBarLeftS is in topBarWrapper																		*/
+/*		now topMenuFlex1S is in topMenuFlexWrapper																*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlex1***************************************************/
+	#topMenuFlex1 
+	{
+		float: left;
+	}
+
+
+/*************************************** COMMENTS middleContainerWrapper ****************************************/
+/*																												*/
+/* 21-11-2023																									*/
+/*	Need to put clear: both because class header-wrapper is not assigned to DIV.								*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*                                                                      	                    				*/
+/* 21-10-2023																									*/
+/*	remove border settings																						*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for middleContainerWrapper																*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	add background color and font variables																		*/
+/*																												*/
+/* 18-10-2023																									*/
+/* container to present the sheets 																				*/
+/*																												*/
+/*************************************** COMMENTS middleContainerWrapper ****************************************/
+	#middleContainerWrapper
+	{
+		background: $(middleContainerWrapper.BG.Color); 
+		color: $(middleContainerWrapper.TXT.Color);
+		font: $(middleContainerWrapper.TXT.Font);
+		
+		clear: both;
+		width: 100%;
+
+		background-color: var(--middleContainerWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--middleContainerWrapper-TXT-color);-->
+<!--		font-family: var(--middleContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS middleContainerWrapper ****************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border that are used for the template layout						*/
+/*	otherwise they are also displayed on the website															*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: border-color, border-top-style, border-width												*/
+/*																												*/
+/*************************************** COMMENTS middleContainerWrapper ****************************************/
+	#middleContainerWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS middleContainer ***********************************************/
+/* 22-11-2023																									*/
+/*	added because element-wrapper is assigned to middleContainer1												*/
+/*	and we need to ensure that float: left which is removed from element-wrapper is added						*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/*************************************** COMMENTS middleContainer ***********************************************/	
+	#middleContainer
+		{
+		float: left;
+	}
+
+
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for centerBarWrapper																	*/
+/*																												*/
+/* 23-7-2023: replaced whole block with main-wrapper															*/
+/*																												*/
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+	#centerBarWrapper 
+	{
+		background: $(centerBarWrapper.BG.Color); 
+		color: $(centerBarWrapper.TXT.Color);
+		font: $(centerBarWrapper.TXT.Font);
+
+		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--centerBarWrapper-TXT-color);-->
+<!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
+ 	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS centerBarWrapper **********************************************/
+	#centerBarWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS centerBarLeft *************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor lightgreen, this is the color surrounding the post page							*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarLeft *************************************************/
+	#centerBarLeft 
+	{
+		float: left;
+		width: 10%;
+/*background: lightgreen;*/
+	}
+
+/*************************************** COMMENTS centerBarRight ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor grey, this is the color surrounding the post page									*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarRight ************************************************/
+	#centerBarRight
+	{
+		float: right;
+		width: 20%;
+/*background: #aaa;*/
+	}
+
+/*************************************** COMMENTS centerBarMiddle ***********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 5-10-2023																									*/
+/*	remove background collor grey, this is the color surrounding the post page									*/
+/*																												*/
+/*	23-7-2023																									*/
+/*		added																									*/
+/*																												*/
+/*************************************** COMMENTS centerBarMiddle ***********************************************/	
+	#centerBarMiddle
+	{
+		float: left;
+/*		width: 70%;*/
+		width: 67%;
+/*background: yellow;*/
+	}
+
+
+/*************************************** COMMENTS bottomContainerWrapper ****************************************/
+/*																												*/
+/* 21-11-2023																									*/
+/*	Need to put clear: both because class footer-wrapper is not assigned to DIV.								*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for bottomContainerWrapper																*/
+/*																												*/
+/* 13-9-2023																									*/
+/*	moved float: left to class flex-container																	*/
+/*																												*/
+/* 4-9-2023																										*/
+/*	Remove overflow-auto																						*/
+/*	justify-content: space-around provides half-sized space on the edges										*/
+/*	moved justify-content: space-around to class flex-container													*/
+/*	moved align-items: center to class flex-container															*/
+/*	moved padding-left to class flex-container																	*/
+/*	moved padding-right to class flex-container																	*/
+/*																												*/
+/* 10-9-2022																									*/
+/*	attempt to create responsive 5 columns footer																*/
+/*	align-items versus justify-content: we need them both x- and y-as											*/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container 	*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	justify-content controls where the flex items sits on the main axis											*/
+/*		space-around: distributes all the items evenly along the main axis										*/
+/*			with a bit of space left at either end																*/
+/*		center make the flex items sit in the center of the main axis											*/
+/*	https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox 										*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	align-items controls where the flex items sit on the cross axis												*/
+/*																												*/
+/*************************************** COMMENTS bottomContainerWrapper ****************************************/
+	#bottomContainerWrapper
+	{
+		background: $(bottomContainerWrapper.BG.Color);
+		color: $(bottomContainerWrapper.TXT.Color);
+
+		clear: both;
+		width: 100%;
+
+		background-color: var(--bottomContainerWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--bottomContainerWrapper-TXT-color);-->
+<!--		font-family: var(--bottomContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS bottomContainerWrapper ****************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS bottomContainerWrapper ****************************************/
+	#bottomContainerWrapper
+	{
+		border-style: none;
+	}
+
+
+/*************************************** COMMENTS bottomLineWrapper *********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 19-10-2023																									*/
+/*	change color, background, font settings																		*/
+/*		added variables for bottomLineWrapper																	*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	replaced whole block with header-wrapper																	*/
+/*																												*/
+/* 25-8-2022 added																								*/
+/*																												*/
+/* SEE topLineWrapper for history																				*/
+/* USE in combination with footer-wrapper																		*/
+/*																												*/
+/*************************************** COMMENTS bottomLineWrapper *********************************************/	
+	#bottomLineWrapper 
+	{
+		background: $(bottomLineWrapper.BG.Color);
+		color: $(bottomLineWrapper.TXT.Color);
+		font: $(bottomLineWrapper.TXT.Font);
+
+		background-color: var(--bottomLineWrapper-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--bottomLineWrapper-TXT-color);-->
+<!--		font-family: var(--bottomLineWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS bottomLineWrapper *********************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS bottomLineWrapper *********************************************/
+	#bottomLineWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS bottomLineMiddle **********************************************/
+/*																												*/
+/* 21-11-2023																									*/
+/*	Remove float: left because we want to show the copyright notice in the middle of the screen					*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/*	Needed in template-skin to set the parameters for the template layout.										*/
+/*		parameters: width, float																				*/
+/*																												*/
+/*	float: left is set here because it is removed element-wrapper												*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS bottomLineMiddle **********************************************/
+	#bottomLineMiddle
+	{
+		text-align: center;
+	}
+
+
+
+
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ DISABLED ELEMENTS [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ */
+
+/*************************************** COMMENTS topBarWrapper *************************************************/
+/*																												*/
+/* 21-10-2023																									*/
+/*	DISABLED with display: none																					*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	see topLineWrapper for history																				*/
+/*	use in combination with header-wrapper																		*/
+/*																												*/
+/*************************************** COMMENTS topBarWrapper *************************************************/
+	#topBarWrapper 
+	{
+		background: $(topBarWrapper.BG.Color);
+		color: $(topBarWrapper.TXT.Color);
+
+display: none;
+ 	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS topBarWrapper *************************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS topBarWrapper *************************************************/
+	#topBarWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS topBarLeft ****************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topBarLeft ****************************************************/
+	#topBarLeft 
+	{
+		float: left;
+	}
+
+/*************************************** COMMENTS topBarRight ***************************************************/
+/*																												*/
+/*																												*/
+/*************************************** COMMENTS topBarRight ***************************************************/
+	#topBarRight
+	{
+		float: right;
+width: 50%;
+	}
+
+/*************************************** COMMENTS topBarMiddle **************************************************/
+/*																												*/
+/*	NO LONGER USED only 2 columns in topBarWrapper																*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topBarMiddle **************************************************/
+	#topBarMiddle
+	{
+		float: left;
+		width: 20%;
+	}
+
+
+/*************************************** COMMENTS topMenuBarWrapper *********************************************/
+/*																												*/
+/* 21-10-2023																									*/
+/*	DISABLED with display: none																					*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	see topLineWrapper for history																				*/
+/*	use in combination with header-wrapper																		*/
+/*																												*/
+/*************************************** COMMENTS topMenuBarWrapper *********************************************/
+	#topMenuBarWrapper
+	{
+		background: $(topMenuBarWrapper.BG.Color);
+		color: $(topMenuBarWrapper.TXT.Color);
+
+display: none;
+	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS topMenuBarWrapper *********************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS topMenuBarWrapper *********************************************/
+	#topMenuBarWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS topMenuBarLeft ************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/* 1-9-2022																										*/
+/*	width: 15% not needed if topMenuBarRight is not used														*/
+/*																												*/
+/*************************************** COMMENTS topMenuBarLeft ************************************************/
+	#topMenuBarLeft 
+	{
+		float: left;
+		width: 15%;
+/*padding: 0.5%;*/
+	}
+
+/*************************************** COMMENTS topMenuBarRight ***********************************************/
+/*																												*/
+/*																												*/
+/*************************************** COMMENTS topMenuBarRight ***********************************************/
+	#topMenuBarRight
+	{
+		float: right;
+	}
+
+/*************************************** COMMENTS topMenuBarMiddle **********************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS topMenuBarMiddle **********************************************/
+	#topMenuBarMiddle
+	{
+		float: left;
+	}
+	
+
+/*************************************** COMMENTS bottomMenuBarWrapper ******************************************/
+/*																												*/
+/* 21-10-2023																									*/
+/*	DISABLED with display: none																					*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	see topLineWrapper for history																				*/
+/*	use in combination with header-wrapper																		*/
+/*																												*/
+/*************************************** COMMENTS bottomMenuBarWrapper ******************************************/
+	#bottomMenuBarWrapper
+	{
+		background: $(bottomMenuBarWrapper.BG.Color);
+		color: $(bottomMenuBarWrapper.TXT.Color);
+
+display: none;
+	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS bottomMenuBarWrapper ******************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS bottomMenuBarWrapper ******************************************/
+	#bottomMenuBarWrapper
+	{
+		border-style: none;
+	}
+
+/*************************************** COMMENTS bottomMenuBarLeft *********************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/* 1-9-2022																										*/
+/*	width: 20% not needed if bottomMenuBarRight is not used														*/
+/*																												*/
+/*************************************** COMMENTS bottomMenuBarLeft *********************************************/
+	#bottomMenuBarLeft 
+	{
+		float: left;
+		width: 20%;
+	}
+
+/*************************************** COMMENTS bottomMenuBarRight ********************************************/
+/*																												*/
+/*																												*/
+/*************************************** COMMENTS bottomMenuBarRight ********************************************/
+	#bottomMenuBarRight
+	{
+		float: right;
+	}
+
+/*************************************** COMMENTS bottomMenuBarMiddle *******************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS bottomMenuBarMiddle *******************************************/
+	#bottomMenuBarMiddle
+	{
+		float: left;
+	}
+
+
+/*************************************** COMMENTS bottomBarWrapper **********************************************/
+/*																												*/
+/* 21-10-2023																									*/
+/*	DISABLED with display: none																					*/
+/*																												*/
+/* 29-6-2023																									*/
+/*	see topLineWrapper for history																				*/
+/*	use in combination with header-wrapper																		*/
+/*																												*/
+/*************************************** COMMENTS bottomBarWrapper **********************************************/
+	#bottomBarWrapper 
+	{
+		background: $(bottomBarWrapper.BG.Color);
+		color: $(bottomBarWrapper.TXT.Color);
+
+display: none;
+ 	}
+
+/**TEMPLATE-SKIN *********************** COMMENTS bottomBarWrapper **********************************************/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS bottomBarWrapper **********************************************/
+	#bottomBarWrapper
+	{
+		border-style: none;
+	}
+
+
+/*************************************** COMMENTS bottomBarLeft *************************************************/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS bottomBarLeft *************************************************/
+	#bottomBarLeft 
+	{
+		float: left;
+		width:20%;
+	}
+
+/*************************************** COMMENTS bottomBarRight ************************************************/
+/*																												*/
+/*																												*/
+/*************************************** COMMENTS bottomBarRight ************************************************/
+	#bottomBarRight
+	{
+		float: right;
+		width: 20%;
+	}
+
+/*************************************** COMMENTS bottomBarMiddle ***********************************************/
+/*																												*/
+/*	NO LONGER USED only 2 columns in topBarWrapper																*/
+/*																												*/
+/* 16-11-2023																									*/
+/*	float: left is set here because it is removed from element-wrapper											*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	remove float: left because it is already provided by the class element-wrapper								*/
+/*																												*/
+/*************************************** COMMENTS bottomBarMiddle ***********************************************/
+	#bottomBarMiddle
+	{
+		float: left;
+		width: 20%;
+	}
+
+
+/* ============================================================================================================ */
+/* 										DANGA Template CSS definitions - SPECIALS								*/
+/* ============================================================================================================ */
+
+/*************************************** COMMENTS fixed-header **************************************************/
+/*	NOT USED == NOT USED																						*/
+/****************************************************************************************************************/
+	.fixed-header
+	{
+			position: fixed;      
+			top: 0;
+	}
+
+
+/*************************************** COMMENTS breadcrumbs ***************************************************/	
+/* 1-9-2022 																									*/
+/*	define the a: settings for the breadcrumbs																	*/
+/*																												*/
+/* 1-9-2022																										*/
+/*	link replaced by menu.link																					*/
+/*																												*/
+
+/* 25-7-2023 																									*/
+/*	replace .section-wrapper by breadcrumbs-wrapper																*/
+/*																												*/
+/*************************************** COMMENTS breadcrumbs ***************************************************/	
+	.breadcrumbs-wrapper .breadcrumbs a:link
+		{
+			text-decoration: none;
+			color: $(breadcrumbs.link.color);
+		}
+
+	.breadcrumbs-wrapper .breadcrumbs a:visited
+		{
+			text-decoration: none;
+			color: $(breadcrumbs.link.visited.color);
+		}
+
+	.breadcrumbs-wrapper .breadcrumbs a:hover 
+		{
+			text-decoration: underline;
+			color: $(breadcrumbs.link.hover.color);
+		}
+
+
+/*************************************** COMMENTS header-wrapper ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*																												*/
+/* 26-8-2023                                                                                    				*/
+/*  overflow should be removed because it creates scroll-bar                                    				*/
+/*                                                                                              				*/
+/* 29-6-2023                                                                                					*/
+/*  replaced whole block in wrappers with header-wrapper                                    					*/
+/*																												*/
+/*	'clear: both' ensures that when two elements run into each other 											*/
+/*		they will not touch each others settings 																*/
+/*                                                                                          					*/
+/* 18-7-2023                                                                                					*/
+/*  it is not clear whether 'overflow: auto' really has a purpose                           					*/
+/*                                                                                          					*/
+/* 21-7-2023                                                                            						*/
+/*	'padding: 0%' ensures the topMenuBar-elements are placed directly at the borders							*/
+/*		padding is in the topMenuBar-elements via element-wrapper												*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*                                                                                          					*/
+/*************************************** COMMENTS header-wrapper ************************************************/	
+	.header-wrapper
+	{
+		clear: both;
+		width: 100%;
+		float: left;
+		display: inline-block;
+/*		box-sizing: border-box;*/
+		padding: 0%
+	}
+
+
+/*************************************** COMMENTS element-wrapper ***********************************************/
+/*                                                                                          					*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*	float: left can be removed because need to set it per element												*/
+/*																												*/
+/* 21-7-2023                                                                                					*/
+/*  'padding: 0.5%' ensures the element is shown even when it does not contain text      						*/
+/*  'min-height: 20px' also ensures the Column is shown                                     					*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*																												*/
+/* REMARK: CLASS handles the CSS layout of the topMenuBarLeftColumn		            							*/
+/*																												*/
+/*************************************** COMMENTS element-wrapper ***********************************************/
+	.element-wrapper
+	{
+/*	    	float: left;*/
+		padding:  0.5%;
+/*		box-sizing: border-box;*/
+	}
+	
+
+/*************************************** COMMENTS main-wrapper **************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*																												*/
+/* 26-8-2023                                                                                    				*/
+/*  overflow should be removed because it creates scroll-bar                                    				*/
+/*                                                                                              				*/
+/* 29-6-2023                                                                                					*/
+/*  replaced whole block in wrappers with main-wrapper                              	      					*/
+/*																												*/
+/*	'clear: both' ensures that when two elements run into each other 											*/
+/*		they will not touch each others settings 																*/
+/*                                                                                          					*/
+/* 18-7-2023                                                                                					*/
+/*  it is not clear whether 'overflow: auto' really has a purpose                           					*/
+/*                                                                                          					*/
+/* 21-7-2023                                                                            						*/
+/*	'padding: 0%' ensures the topMenuBar-elements are placed directly at the borders							*/
+/*		padding is in the topMenuBar-elements via element-wrapper												*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'display: inline-block' behaves likes float without having to clear the floats								*/
+/*	except that you can not move the element to the left or right of the parent									*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*************************************** COMMENTS main-wrapper **************************************************/
+	.main-wrapper
+	{
+		clear: both;
+		width: 100%;
+		float: left;
+		display: inline-block;
+/*		box-sizing: border-box;*/
+		padding: 0%
+}
+
+
+/*************************************** COMMENTS footer-wrapper ************************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*																												*/
+/* 26-8-2023                                                                                    				*/
+/*  overflow should be removed because it creates scroll-bar                                    				*/
+/*																												*/
+/* 20-7-2023																									*/
+/*  replaced whole block in wrappers with footer-wrapper														*/
+/*																												*/
+/*	'clear: both' ensures that when two elements run into each other 											*/
+/*		they will not touch each others settings 																*/
+/*                                                                                          					*/
+/* 18-7-2023                                                                                					*/
+/*  it is not clear whether 'overflow: auto' really has a purpose                           					*/
+/*                                                                                          					*/
+/* 21-7-2023                                                                            						*/
+/*	'padding: 0%' ensures the topMenuBar-elements are placed directly at the borders							*/
+/*		padding is in the topMenuBar-elements via element-wrapper												*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'display: inline-block' behaves likes float without having to clear the floats								*/
+/*	except that you can not move the element to the left or right of the parent									*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	'box-sizing: border-box' on an element ensures padding + border												*/
+/*		are included in the width and height																	*/
+/*																												*/
+/*************************************** COMMENTS footer-wrapper ************************************************/
+	.footer-wrapper
+	{
+		clear: both;
+		width: 100%;
+		float: left;
+		display: inline-block;
+/*		box-sizing: border-box;*/
+		padding: 0%
+}
+
+
+/*************************************** COMMENTS target-container-erp ******************************************/
+/*																												*/
+/* 20-11-2023	for WebMaster-Knowledge																			*/
+/*																												*/
+/* 18-10-2023 																									*/
+/* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ 					*/
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp												*/
+/*																												*/
+/*	display: none is to ensure the sheet is not displayed till the button is clicked							*/
+/*	resize: both allows the viewer to resize the div															*/
+/*																												*/
+/*************************************** COMMENTS target-container-erp ******************************************/
+	#target-container-erp
+	{
+		position: relative;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+/*		padding-bottom: 56.25%;*/
+/*		padding-top: 35px;*/
+		height: 0;
+        resize: both;
+		overflow: hidden;
+		width: 100%;
+		display: none;
+  	}
+
+	#target-container-erp iframe
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border: none;
+		width: 100%;
+		height: 100%;		
+	}
+
+
+/*************************************** COMMENTS target-container-ltdw *****************************************/
+/*																												*/
+/* 20-11-2023	for WebMaster-Knowledge																			*/
+/*																												*/
+/* 18-10-2023 																									*/
+/* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ 					*/
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp												*/
+/*																												*/
+/*	display: none is to ensure the sheet is not displayed till the button is clicked							*/
+/*	resize: both allows the viewer to resize the div															*/
+/*																												*/
+/*************************************** COMMENTS target-container-ltdw *****************************************/
+	#target-container-ltdw
+	{
+		position: relative;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+/*		padding-bottom: 56.25%;*/
+/*		padding-top: 35px;*/
+		height: 0;
+        resize: both;
+		overflow: hidden;
+		width: 100%;
+		display: none;
+  	}
+
+	#target-container-ltdw iframe
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border: none;
+		width: 100%;
+		height: 100%;		
+	}
+
+
+/*************************************** COMMENTS target-container **********************************************/
+/*																												*/
+/* 20-11-2023	for danga.biz																					*/
+/*																												*/
+/* 4-11-2023																									*/
+/*	start using target-container and script myFunctionERP or WMS to change url of the sheet						*/
+/*		to embed in the iframe																					*/
+/*	Reference: https://www.w3schools.com/jsref/prop_frame_src.asp												*/
+/*																												*/
+/*	change the name of the ID from target-container-erp into target-container									*/
+/*																												*/
+/* 18-10-2023 																									*/
+/* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ 					*/
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp												*/
+/*																												*/
+/*	display: none is to ensure the sheet is not displayed till the button is clicked							*/
+/*	resize: both allows the viewer to resize the div															*/
+/*																												*/
+/*************************************** COMMENTS target-container **********************************************/
+	#target-container
+	{
+		position: relative;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+/*		padding-bottom: 56.25%;*/
+/*		padding-top: 35px;*/
+		height: 0;
+        resize: both;
+		overflow: hidden;
+		width: 100%;
+		display: none;
+  	}
+
+	#target-container iframe
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border: none;
+		width: 100%;
+		height: 100%;		
+	}
+
+
+/*************************************** COMMENTS container-items ***********************************************/
+/*																												*/
+/* 20-11-2023																									*/
+/*	SEE ALSO SETTINGS UNDERNEATH TEMPLATE-SKIN																	*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	box-sizing: border-box can be removed because is provided globally											*/
+/*																												*/
+/* 21-10-2023																									*/
+/*	add 'padding-right: 5px'																					*/
+/*																												*/
+/* 29-9-2023																									*/
+/*	add 'padding-left: 5px' because in mobile view title was to close to the box								*/
+/*																												*/
+/* 18-9-2023																									*/
+/*	moved 'background-color: #00bfff;' to class container-items													*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper													*/
+/*		and the info-box in bottomContainerWrapper are in full blue												*/
+/*																												*/
+/* 13-9-2023																									*/
+/*	moved float: left to class flex-container																	*/
+/*  Set 'flex: auto' means flex-grow=1, flex-shrink=1, flex-basis=auto                      					*/
+/*																												*/
+/*	remove 'flex-grow: 1' defines how much the item will grow relative to the other								*/
+/*		items in the container																					*/
+/*																												*/
+/* 6-9-2023                                                                                						*/
+/*	remove border                                                                           					*/
+/*																												*/
+/* 30-6-2023																									*/
+/*  definition of the container-items class																		*/
+/*																												*/
+/* 26-8-2023                                                                                    				*/
+/*  overflow should be removed because it creates scroll-bar                                    				*/
+/*																												*/
+/*************************************** COMMENTS container-items ***********************************************/
+	.container-items
+	{
+
+		background-color: #00bfff;
+		
+/*		float: left;*/
+/*		box-sizing: border-box;*/
+/*		flex-grow: 1;*/
+
+		flex: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		background-color: var(--container-items-BG-color, var(--root-BG-color, white ));
+<!--		color: var(--outerWrapper-TXT-color);-->
+<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
+	}
+
+
+/*************************************** COMMENTS flex-container ************************************************/
+/*																												*/
+/* 30-9-2023																									*/
+/*	change padding from 5% into 1% such that it looks prettier on mobile										*/
+/*																												*/
+/* 28-9-2023																									*/
+/*	remove 'flex-direction: row'																				*/
+/*		the flex-direction: the default is ROW                                  								*/
+/*																												*/
+/* 19-9-2023																									*/
+/*	remove 'font-size: 20px'																					*/
+/*																												*/
+/* 18-9-2023																									*/
+/*	padding-left and padding-rigth ensures the flex-container 													*/
+/*		does not fill the complete line which would make the items stretch out over								*/
+/*		the screen																								*/
+/*																												*/
+/* 15-9-2023																									*/
+/*	removed align-items: center because do not want the flex items in the container								*/
+/*		to align along the cross-axis since it looks strange													*/
+/*		removal has no effect on the d-flyout nor m-flyout menu													*/
+/*																												*/
+/* 13-9-2023																									*/
+/*	find out where float: left is set 																			*/
+/*	float: left is set in element-wrapper																		*/
+/*																												*/
+/* 10-9-2023																									*/
+/*	'align-items: center' aligns flex items along the cross axis												*/
+/*		of the current line of the flex container																*/
+/*																												*/
+/* 9-9-2023																										*/
+/*	remove 'text-align: center' because bottomContainer should be left aligned									*/
+/*																												*/
+/* 6-9-2023																										*/
+/*	set text-align to center																					*/
+/*																												*/
+/* 4-9-2023																										*/
+/*	justify-content: space-around provides half-sized space on the edges										*/
+/*																												*/
+/*	moved justify-content: space-around from topContainer														*/
+/*																												*/
+/*	moved align-items: center from topContainer																	*/
+/*																												*/
+/*	moved padding-left from topContainer																		*/
+/*	moved padding-right from topContainer																		*/
+/*																												*/
+/* 10-9-2022																									*/
+/*	attempt to create responsive 5 columns footer																*/
+/*	align-items versus justify-content: we need them both x- and y-as											*/
+/*	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container	*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	justify-content controls where the flex items sit on the main axis											*/
+/*	space-around: distributes all the items evenly along the main axis 											*/
+/*		with a bit of space left at either end																	*/
+/*	center make the flex items sit in the center of the main axis												*/
+/*	https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox										*/
+/*																												*/
+/* 28-6-2023																									*/
+/*	align-items controls where the flex items sit on the cross axis												*/
+/*																												*/
+/* 30-6-2023																									*/
+/*	definition of the flex-container																			*/
+/*************************************** COMMENTS flex-container ************************************************/
+	.flex-container 
+	{
+		display: flex;
+/*		flex-direction: row;*/
+/*		flex-wrap: wrap;*/
+/*		text-align: center;*/
+/*		font-size: 20px;*/
+		justify-content: space-around;
+/*		align-items: center;*/
+		padding-left:  1%;
+		padding-right: 1%;
+	}
+
+
+/*************************************** COMMENTS block-title ***************************************************/
+/*																												*/
+/* 15-9-2023																									*/
+/*	line-height: 25px ensure the line displays below the title													*/
+/* 	margin-bottom makes space between the title and the content of the box 										*/
+/* 	margin-top makes space between the title and the upper box 													*/
+/*************************************** COMMENTS block-title ***************************************************/
+	.block-title
+	{
+		font-size: 14px;
+		margin-bottom: 26px;
+		margin-top: px;
+		line-height: 25px;
+		border-bottom: 2px solid #222;
+	}
+
+	.block-title > span
+	{
+		background-color: #3a85c7;
+		color: #fff;
+		padding: 7px 12px 4px;
+		align-items: center;
+	}
+
+/*************************************** COMMENTS info-box-wrapper **********************************************/
+/*																												*/
+/* 15-9-2023																									*/
+/*																												*/
+/*************************************** COMMENTS info-box-wrapper **********************************************/
+	.info-box-wrapper
+	{
+/*		border: 1px solid red;*/
+		height: auto;
+		padding: 5px;
+	}
+
+/*************************************** COMMENTS info-box-wrapper ul *******************************************/
+/*																												*/
+/* 18-9-2023																									*/
+/*	moved 'background-color: #00bfff;' to class container-items													*/
+/*		so the menu in d-flyout or m-flyout topMenuFlexWrapper													*/
+/*		and the info-box in bottomContainerWrapper are in full blue												*/
+/*																												*/
+/*************************************** COMMENTS info-box-wrapper ul *******************************************/
+	.info-box-wrapper ul
+	{
+		list-style-type: none;		
+		margin: 0;
+		padding: 0;
+/*background-color: #00bfff;*/
+	}
+
+	.info-box-wrapper li
+	{
+		color:  white;
+		margin: 5px;
+	}
+
+	.info-box-wrapper li a
+	{
+		display: block;
+/*		color: braun;*/
+		text-decoration: none;
+	}
+
+/*************************************** COMMENTS info-box-wrapper a:link ***************************************/
+/*																												*/
+/* 18-9-2023 added																								*/
+/*																												*/
+/* 1-9-2023																										*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status									*/
+/*	Set the color of a:visited equal to a:link																	*/
+/*	Change a:link into li a:link													        					*/
+/*                                                                                          					*/
+/* 23-8-2023                                                                                					*/
+/*  When we set the color in .info-box-wrapper li a:link it applies to all links in the menu					*/
+/*                                                                                          					*/
+/* 17-7-2023                                                                                					*/
+/*  'color: green' in 'li a:link' sets the color of a unvisited li-item with a hyperlink    					*/
+/*																					        					*/
+/*                                                                                          					*/
+/* 25-7-2023																									*/
+/*	links default settings are:																					*/
+/*		links are underlined																					*/
+/*		unvisited links are blue																				*/
+/*		visited links are purple																				*/
+/*																												*/
+/* REMARK: handles the CSS layout of an unvisited link           					        					*/
+/*																					        					*/
+/*************************************** COMMENTS info-box-wrapper a:link ***************************************/
+    .info-box-wrapper li a:link
+    {
+/*		color: green;*/
+		color: white;
+    }
+
+/*************************************** COMMENTS info-box-wrapper a:visited ************************************/
+/*																												*/
+/* 18-9-2023 added																								*/
+/*																												*/
+/* 1-9-2023																										*/
+/*	Ctrl + H delete browser history for specific URL to clear visited status									*/
+/*	Set the color of a:visited equal to a:link																	*/
+/*	Change a:visited into li a:visited												        					*/
+/*																					        					*/
+/* 17-7-2023                                                                                					*/
+/*  'color: blue' in 'li a:visited' sets the color of a visited li-item with a hyperlink    					*/
+/*																					        					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of an visited link           					            					*/
+/*																					        					*/
+/*************************************** COMMENTS info-box-wrapper a:visited ************************************/
+    .info-box-wrapper li a:visited
+    {
+/*		color: red*/
+color: white;
+    }
+
+/*************************************** COMMENTS info-box-wrapper li a:hover ***********************************/
+/*																					        					*/
+/* 18-9-2023 added																								*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to change the position of a:hover in the list of pseudo classes                    					*/
+/*                                                                                          					*/
+/* 17-7-2023                                                                                					*/
+/*  'background-color: color' ensures the list item when hovered gets another color	        					*/
+/*  'color: red' in 'li a:hover' sets the color when an option is hovered                   					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is hovered		    			        					*/
+/*																					        					*/
+/*************************************** COMMENTS info-box-wrapper li a:hover ***********************************/
+	.info-box-wrapper li a:hover
+	{
+		background-color: #111111;
+		text-decoration: underline;
+		color: red;
+	}
+
+/*************************************** COMMENTS info-box-wrapper li a:active **********************************/
+/*																					        					*/
+/* 18-9-2023 added																								*/
+/*																												*/
+/* 23-8-2023                                                                                					*/
+/*  Need to add li a:active to menu-wrapper                                                 					*/
+/*                                                                                          					*/
+/*                                                                                          					*/
+/* REMARK: handles the CSS layout of a link when it is selected		    			        					*/
+/*																					        					*/
+/*************************************** COMMENTS info-box-wrapper li a:active **********************************/
+	.info-box-wrapper li a:active
+	{
+/*		color: indigo;*/
+	}
+
+
+/* ============================================================================================================ */
+/* 										SETTINGS FOR MOBILE SCREEN SIZES										*/
+/* ============================================================================================================ */
+
+	
+/*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
+/*																												*/
+/* 5-10-2023																									*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
+/*																												*/
+/* 5-10-2023                                                                                    				*/
+/*	hide centerBarLeft on mobile screens																		*/
+/*	hide centerBarRight on mobile screens																		*/
+/*																												*/
+/*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+	#centerBarLeft
+	{
+		display: none;
+	}
+
+	#centerBarRight
+	{
+		display: none;
+	}
+
+	#centerBarMiddle
+	{
+		width: 100%;
+	}
+}
+
+
+/*************************************** COMMENTS classes .header-wrapper, .footer-wrapper **********************/
+/*																												*/
+/* 6-11-2023																									*/
+/*	apply smaller fonts when mobile device																		*/
+/*		to classes .header-wrapper, .footer-wrapper																*/
+/*		to divs topLineWrapper, bottomLineWrapper, mainCenterMiddle												*/
+/*																												*/
+/*************************************** COMMENTS divs topLineWrapper, bottomLineWrapper, mainCenterMiddle ******/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+	.header-wrapper, .footer-wrapper, .mainWrapper, #topLineWrapper, #bottomLineWrapper, #middleContainerWrapper, #centerBarWrapper
+	{
+		font-size: 90%;
+	}
+}
+
+
+/*************************************** COMMENTS topMenuFlexWrapper .flex-container ****************************/
+/*																												*/
+/* 22-9-2023																									*/
+/*	remove flex-wrap: wrap;	and set 'flex-direction: column														*/
+/*		since topLeftBar is no part of the menu, which is a flex container - d-flyout, 							*/
+/*		but part of topMenuFlex2, which is also a flex-container it works nicer to set 							*/
+/*		the flex-direction of this flex-container to column														*/
+/*																												*/
+/*	add flex-wrap: wrap;																						*/
+/*		allow flex items to wrap to make sure the menu width remains FULL container width						*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlexWrapper .flex-container ****************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px)	{
+
+	#topMenuFlexWrapper.flex-container 
+	{
+		flex-direction: column;
+/*			flex-wrap: wrap;	/* allow flex items to wrap */			*/
+	}
+}
+
+
+/*************************************** COMMENTS bottomContainerWrapper .flex-container ************************/
+/*																												*/
+/* 9-06-2023																									*/
+/*	Set flex-direction to column for mobile view																*/
+/*	Moved below d-flyout to ensure it is being used																*/
+/*																												*/
+/*************************************** COMMENTS bottomContainerWrapper .flex-container ************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media screen and (max-width: 700px)	{
+		
+	#bottomContainerWrapper.flex-container 
+	{
+		flex-direction: column;
+	}
+
+	#bottomContainerWrapper .container-items
+	{
+		width: 100%;
+	}
+
+/* 11-9-2023 prepared to use d-flyout instead of m-flyout
+
+		.d-flyout ul
+		{
+			flex-direction: column;
+		}
+
+		.d-flyout > ul > li
+		{
+			text-align: left;
+		}
+ 11-9-2023 prepared to use d-flyout instead of m-flyout */
+
+	}
+
+/*************************************** COMMENTS mobile-menu-main li *******************************************/
+/*																												*/
+/* 29-9-2023																									*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
+/*																												*/
+/* 7-9-2023																										*/
+/*	Most browsers will display the nav element with the following default values:         						*/
+/* 	'display: block'                                                                    						*/
+/*	Need to remove 'display: block' because it is not needed here												*/
+/*	Need to remove 'text-align: left' is set in m-flyout li a													*/
+/*																												*/
+/* 30-7-2023                                                                                    				*/
+/*  'display: block'in li to ensure list-items displayed vertically	    										*/
+/*   'text-align: left' in 'li a' to display list-items starting left											*/
+/*************************************** COMMENTS mobile-menu-main li *******************************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+	.mobile-menu-main
+	{
+		display: block;
+	}
+
+	.mobile-menu-main li a
+	{
+/*		text-align: left*/
+	}
+}
+
+
+/* ============================================================================================================ */
+/* 										SETTINGS CSS END 														*/
+/* ============================================================================================================ */
+
