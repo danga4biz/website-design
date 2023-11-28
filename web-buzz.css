@@ -1,13 +1,5 @@
 body { background: green;}
 
-	.container-items
-	{
-		background-color: #00bfff;
-		flex: auto;
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-
 /* ============================================================================================================ */
 /* 										SETTINGS CSS START 														*/
 /* ============================================================================================================ */
@@ -1272,20 +1264,10 @@ display: none;
 /*************************************** COMMENTS container-items ***********************************************/
 	.container-items
 	{
-
 		background-color: #00bfff;
-		
-/*		float: left;*/
-/*		box-sizing: border-box;*/
-/*		flex-grow: 1;*/
-
 		flex: auto;
 		padding-left: 5px;
 		padding-right: 5px;
-
-		background-color: var(--container-items-BG-color, var(--root-BG-color, white ));
-<!--		color: var(--outerWrapper-TXT-color);-->
-<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
 
 
