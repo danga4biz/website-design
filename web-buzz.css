@@ -115,6 +115,7 @@ body { background: green;}
 	#topLineWrapper
 	{
 		border-style: none;
+		border-top-style: none;
 	}
 
 /*************************************** COMMENTS topLineLeft ***************************************************/
