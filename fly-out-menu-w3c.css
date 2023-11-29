@@ -1,6 +1,7 @@
 
+
 /* ============================================================================================================ */
-/* 										W3C FLY-OUT MenuText													*/
+/* 										W3C FLY-OUT MenuText START												*/
 /* ============================================================================================================ */
 
 /*************************************** COMMENTS fly-out menu W3C ******************************* 23-7-2023 ****/
@@ -558,20 +559,19 @@ border-top-color: transparent;
 		transition: color .2s linear;
 	}
 
-/*************************************** COMMENTS d-flyout li.selected a ****************************************/
-/*                                                                                          					*/
-/* 29-8-2023 need to add li.selected a but not sure when it is used 											*/
-/*	So for now remove it																						*/
-/*																												*/
-/* 23-8-2023                                                                                					*/
-/*  Need to find out what the difference is between "li.selected a" AND li a:active         					*/
-/*                                                                                          					*/
-/* 21-7-2023                                                                                					*/
-/*  'color: red' in 'li.selected a sets the color when an option is selected                					*/
-/*                                                                                          					*/
-/* REMARK: handles the CSS layout of a link when it is selected		    			        					*/
-/*                                                                                          					*/
-/*************************************** COMMENTS d-flyout li.selected a ****************************************/
+/* HELP HELP HELP HELP HELP HELP HELP HELP */
+/****************************** COMMENTS d-flyout li.selected a *****************************/
+/* 29-8-2023 need to add li.selected a but not sure when it is used 						*/
+/*	So for now remove it																	*/
+/*																							*/
+/* 23-8-2023                                                                                */
+/*  Need to find out what the difference is between "li.selected a" AND li a:active         */
+/*                                                                                          */
+/* 21-7-2023                                                                                */
+/*  'color: red' in 'li.selected a sets the color when an option is selected                */
+/*                                                                                          */
+/* REMARK: handles the CSS layout of a link when it is selected		    			        */
+/********************************************************************************************/
 /*
 	.d-flyout li.selected a
 	{
@@ -579,16 +579,14 @@ color: yellow;
 	}
 */
 
-/*************************************** COMMENTS d-flyout pseudo classes ***************************************/
-/*                                                                                          					*/
-/* a:hover MUST come after a:link and a:visited in the CSS definition to be effective!      					*/
-/* a:active MUST come after a:hover in the CSS definition to be effective!                  					*/
-/*                                                                                          					*/
-/*  https://www.w3schools.com/css/css_pseudo_classes.asp                                    					*/
-/*                                                                                          					*/
-/* NEED TO CHANGE THE ORDER OF THE PSEUDO CLASSES IN MENU_WRAPPER                           					*/
-/*                                                                                          					*/
-/*************************************** COMMENTS d-flyout pseudo classes ***************************************/
+/****************************** COMMENTS d-flyout pseudo classes ****************************/
+/* a:hover MUST come after a:link and a:visited in the CSS definition to be effective!      */
+/* a:active MUST come after a:hover in the CSS definition to be effective!                  */
+/*                                                                                          */
+/*  https://www.w3schools.com/css/css_pseudo_classes.asp                                    */
+/*                                                                                          */
+/* NEED TO CHANGE THE ORDER OF THE PSEUDO CLASSES IN MENU_WRAPPER                           */
+/********************************************************************************************/
 
 /*************************************** COMMENTS d-flyout li a:link ********************************************/
 /*************************************** COMMENTS d-flyout a:link ***********************************************/
@@ -921,4 +919,9 @@ border-top-color: initial;
     }
   }
 }
+
+
+/* ============================================================================================================ */
+/* 										W3C FLY-OUT MenuText END												*/
+/* ============================================================================================================ */
 
