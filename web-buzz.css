@@ -1265,7 +1265,8 @@ display: none;
 	.container-items
 	{
 
-		background-color: #00bfff;
+/*		background-color: #00bfff;*/
+		background-color:  red;
 		
 /*		float: left;*/
 /*		box-sizing: border-box;*/
