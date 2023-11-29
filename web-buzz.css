@@ -1264,14 +1264,6 @@ display: none;
 /*************************************** COMMENTS container-items ***********************************************/
 	.container-items
 	{
-
-/*		background-color: #00bfff;*/
-		background-color:  red;
-		
-/*		float: left;*/
-/*		box-sizing: border-box;*/
-/*		flex-grow: 1;*/
-
 		flex: auto;
 		padding-left: 5px;
 		padding-right: 5px;
