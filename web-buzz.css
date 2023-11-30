@@ -909,6 +909,12 @@ display: none;
 
 
 /*************************************** COMMENTS breadcrumbs ***************************************************/	
+/* 30-11-2023																									*/
+/*	remove the color of the a:link																				*/
+/*		because breadcrumbs.link.color (#CEFFFF) is not readable												*/
+/*																												*/
+/*		when removed the  a:-webkit-any-link { color: -webkit-link; will take over								*/
+/*																												*/
 /* 1-9-2022 																									*/
 /*	define the a: settings for the breadcrumbs																	*/
 /*																												*/
@@ -923,7 +929,7 @@ display: none;
 	.breadcrumbs-wrapper .breadcrumbs a:link
 		{
 			text-decoration: none;
-			color: $(breadcrumbs.link.color);
+/*			color: $(breadcrumbs.link.color);*/
 		}
 
 	.breadcrumbs-wrapper .breadcrumbs a:visited
