@@ -1,0 +1,157 @@
+
+/* ============================================================================================================ */
+/* 									SETTINGS FOR MOBILE SCREEN SIZES START										*/
+/* ============================================================================================================ */
+
+	
+/*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
+/*																												*/
+/* 5-10-2023																									*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
+/*																												*/
+/* 5-10-2023                                                                                    				*/
+/*	hide centerBarLeft on mobile screens																		*/
+/*	hide centerBarRight on mobile screens																		*/
+/*																												*/
+/*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+	#centerBarLeft
+	{
+		display: none;
+	}
+
+	#centerBarRight
+	{
+		display: none;
+	}
+
+	#centerBarMiddle
+	{
+		width: 100%;
+	}
+}
+
+
+/*************************************** COMMENTS classes .header-wrapper, .footer-wrapper **********************/
+/*																												*/
+/* 6-11-2023																									*/
+/*	apply smaller fonts when mobile device																		*/
+/*		to classes .header-wrapper, .footer-wrapper																*/
+/*		to divs topLineWrapper, bottomLineWrapper, mainCenterMiddle												*/
+/*																												*/
+/*************************************** COMMENTS divs topLineWrapper, bottomLineWrapper, mainCenterMiddle ******/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+	.header-wrapper, .footer-wrapper, .mainWrapper, #topLineWrapper, #bottomLineWrapper, #middleContainerWrapper, #centerBarWrapper
+	{
+		font-size: 90%;
+	}
+}
+
+
+/*************************************** COMMENTS topMenuFlexWrapper .flex-container ****************************/
+/*																												*/
+/* 22-9-2023																									*/
+/*	remove flex-wrap: wrap;	and set 'flex-direction: column														*/
+/*		since topLeftBar is no part of the menu, which is a flex container - d-flyout, 							*/
+/*		but part of topMenuFlex2, which is also a flex-container it works nicer to set 							*/
+/*		the flex-direction of this flex-container to column														*/
+/*																												*/
+/*	add flex-wrap: wrap;																						*/
+/*		allow flex items to wrap to make sure the menu width remains FULL container width						*/
+/*																												*/
+/*************************************** COMMENTS topMenuFlexWrapper .flex-container ****************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px)	{
+
+	#topMenuFlexWrapper.flex-container 
+	{
+		flex-direction: column;
+/*			flex-wrap: wrap;	/* allow flex items to wrap */			*/
+	}
+}
+
+
+/*************************************** COMMENTS bottomContainerWrapper .flex-container ************************/
+/*																												*/
+/* 9-06-2023																									*/
+/*	Set flex-direction to column for mobile view																*/
+/*	Moved below d-flyout to ensure it is being used																*/
+/*																												*/
+/*************************************** COMMENTS bottomContainerWrapper .flex-container ************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media screen and (max-width: 700px)	{
+		
+	#bottomContainerWrapper.flex-container 
+	{
+		flex-direction: column;
+	}
+
+	#bottomContainerWrapper .container-items
+	{
+		width: 100%;
+	}
+
+/* 11-9-2023 prepared to use d-flyout instead of m-flyout
+
+		.d-flyout ul
+		{
+			flex-direction: column;
+		}
+
+		.d-flyout > ul > li
+		{
+			text-align: left;
+		}
+ 11-9-2023 prepared to use d-flyout instead of m-flyout */
+
+	}
+
+/*************************************** COMMENTS mobile-menu-main li *******************************************/
+/*																												*/
+/* 29-9-2023																									*/
+/*	set max-width from 600 to 800 (769 seems to be the max width for tablets									*/
+/*																												*/
+/* 7-9-2023																										*/
+/*	Most browsers will display the nav element with the following default values:         						*/
+/* 	'display: block'                                                                    						*/
+/*	Need to remove 'display: block' because it is not needed here												*/
+/*	Need to remove 'text-align: left' is set in m-flyout li a													*/
+/*																												*/
+/* 30-7-2023                                                                                    				*/
+/*  'display: block'in li to ensure list-items displayed vertically	    										*/
+/*   'text-align: left' in 'li a' to display list-items starting left											*/
+/*************************************** COMMENTS mobile-menu-main li *******************************************/
+
+/* On screens that are 600px or less, set the background color to lightgreen */
+
+@media screen and (max-width: 800px) {
+
+	.mobile-menu-main
+	{
+		display: block;
+	}
+
+	.mobile-menu-main li a
+	{
+/*		text-align: left*/
+	}
+}
+
+
+/* ============================================================================================================ */
+/* 									SETTINGS FOR MOBILE SCREEN SIZES END										*/
+/* ============================================================================================================ */
