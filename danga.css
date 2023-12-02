@@ -65,7 +65,7 @@
 	#outerWrapper 
 	{
 		background: $(outerWrapper.BG.Color);
-		font-family: $(outerWrapper.TXT.Font);
+		font: $(outerWrapper.TXT.Font);
 
 <!--		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));-->
 <!--		color: var(--outerWrapper-TXT-color);-->
