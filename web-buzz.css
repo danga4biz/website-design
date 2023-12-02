@@ -63,10 +63,10 @@ body { background: green;}
 	{
 		background: $(outerWrapper.BG.Color);
 		font: $(outerWrapper.TXT.Font);
+		font: var(--outerWrapper-TXT-font-family, var(--root-font-family, ));
 
 <!--		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));-->
 <!--		color: var(--outerWrapper-TXT-color);-->
-		font: var(--outerWrapper-TXT-font-family, var(--root-font-family, ));
 	}
 
 
