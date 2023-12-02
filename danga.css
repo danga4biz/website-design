@@ -374,6 +374,12 @@
 
 /*************************************** COMMENTS centerBarWrapper **********************************************/
 /*																												*/
+/* 2-12-2023																									*/
+/*	replace blogger background-color, font settings by variables												*/
+/*																												*/
+/* 2-12-2023																									*/
+/*	change font-family into font																				*/
+/*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
@@ -386,13 +392,14 @@
 /*************************************** COMMENTS centerBarWrapper **********************************************/
 	#centerBarWrapper 
 	{
-		background: $(centerBarWrapper.BG.Color); 
-		color: $(centerBarWrapper.TXT.Color);
-		font: $(centerBarWrapper.TXT.Font);
+/*		background: $(centerBarWrapper.BG.Color); */
+/*		color: $(centerBarWrapper.TXT.Color);*/
+/*		font: $(centerBarWrapper.TXT.Font);*/
 
 		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
+		font: var(--centerBarWrapper-TXT-font, var(--root-TXT-font, ));
+		
 <!--		color: var(--centerBarWrapper-TXT-color);-->
-<!--		font-family: var(--centerBarWrapper-TXT-font-family, var(--root-font-family, ))-->
  	}
 
 /**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
