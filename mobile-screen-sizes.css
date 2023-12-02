@@ -3,6 +3,16 @@
 /* 									SETTINGS FOR MOBILE SCREEN SIZES START										*/
 /* ============================================================================================================ */
 
+layer layout {
+
+	#centerBarMiddle
+	{
+		float: left;
+		width: 80%;
+	}
+
+}
+
 	
 /*************************************** COMMENTS centerBarLeft, centerBarRight, centerBarMiddle ****************/
 /*																												*/
