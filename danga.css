@@ -297,7 +297,13 @@
 
 /*************************************** COMMENTS middleContainerWrapper ****************************************/
 /*																												*/
-/* 21-11-2023																									*/
+/* 2-12-2023																									*/
+/*	replace blogger background-color, font settings by variables												*/
+/*																												*/
+/* 2-12-2023																									*/
+/*	change font-family into font																				*/
+/*																												*/
+/* 20-11-2023																									*/
 /*	Need to put clear: both because class header-wrapper is not assigned to DIV.								*/
 /*																												*/
 /* 20-11-2023																									*/
@@ -322,16 +328,17 @@
 /*************************************** COMMENTS middleContainerWrapper ****************************************/
 	#middleContainerWrapper
 	{
-		background: $(middleContainerWrapper.BG.Color); 
-		color: $(middleContainerWrapper.TXT.Color);
-		font: $(middleContainerWrapper.TXT.Font);
+/*		background: $(middleContainerWrapper.BG.Color); */
+/*		font: $(middleContainerWrapper.TXT.Font);*/
+/*		color: $(middleContainerWrapper.TXT.Color);*/
 		
 		clear: both;
 		width: 100%;
 
 		background-color: var(--middleContainerWrapper-BG-color, var(--root-BG-color, white ));
+		font: var(--middleContainerWrapper-TXT-font, var(--root-TXT-font, ))-->
+
 <!--		color: var(--middleContainerWrapper-TXT-color);-->
-<!--		font-family: var(--middleContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
 
 /**TEMPLATE-SKIN *********************** COMMENTS middleContainerWrapper ****************************************/
