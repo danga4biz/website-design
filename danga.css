@@ -21,6 +21,10 @@
 
 
 /*************************************** COMMENTS outerWrapper **************************************************/
+/*																												*/
+/* 2-12-2023																									*/
+/*	replace blogger background-color, font settings by variables												*/
+/*																												*/
 /* 2-12-2023																									*/
 /*	change font-family into font																				*/
 /*																												*/
@@ -76,6 +80,12 @@
 
 /*************************************** COMMENTS topLineWrapper ************************************************/
 /*																												*/
+/* 2-12-2023																									*/
+/*	replace blogger background-color, font settings by variables												*/
+/*																												*/
+/* 2-12-2023																									*/
+/*	change font-family into font																				*/
+/*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
@@ -97,13 +107,14 @@
 /*************************************** COMMENTS topLineWrapper ************************************************/
 	#topLineWrapper
 	{
-		background: $(topLineWrapper.BG.Color);
-		color: $(topLineWrapper.TXT.Color);
-		font: $(topLineWrapper.TXT.Font);
+/*		background: $(topLineWrapper.BG.Color);*/
+/*		color: $(topLineWrapper.TXT.Color);*/
+/*		font: $(topLineWrapper.TXT.Font);*/
 
 		background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
+		font: var(--topLineWrapper-TXT-font, var(--root-TXT-font, ))-->
+
 <!--		color: var(--topLineWrapper-TXT-color);-->
-<!--		font-family: var(--topLineWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
 	
 
