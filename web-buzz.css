@@ -336,7 +336,7 @@ body { background: green;}
 		width: 100%;
 
 		background-color: var(--middleContainerWrapper-BG-color, var(--root-BG-color, white ));
-		font: var(--middleContainerWrapper-TXT-font, var(--root-TXT-font, ))-->
+		font: var(--middleContainerWrapper-TXT-font, var(--root-TXT-font, ));
 
 <!--		color: var(--middleContainerWrapper-TXT-color);-->
 	}
@@ -397,7 +397,8 @@ body { background: green;}
 /*		font: $(centerBarWrapper.TXT.Font);*/
 
 		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
-		font: var(--centerBarWrapper-TXT-font, var(--root-TXT-font, ))
+		font: var(--centerBarWrapper-TXT-font, var(--root-TXT-font, ));
+		
 <!--		color: var(--centerBarWrapper-TXT-color);-->
 
  	}
