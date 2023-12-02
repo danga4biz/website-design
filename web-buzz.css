@@ -399,6 +399,7 @@ body { background: green;}
 
 		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
 		font: var(--centerBarWrapper-TXT-font, var(--root-TXT-font, ));
+		font-size: var(--root-TXT-font-size);
 		
 /*		color: var(--centerBarWrapper-TXT-color);*/
 
