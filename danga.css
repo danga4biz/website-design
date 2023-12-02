@@ -499,7 +499,13 @@
 
 /*************************************** COMMENTS bottomContainerWrapper ****************************************/
 /*																												*/
-/* 21-11-2023																									*/
+/* 2-12-2023																									*/
+/*	replace blogger background-color, font settings by variables												*/
+/*																												*/
+/* 2-12-2023																									*/
+/*	change font-family into font																				*/
+/*																												*/
+/* 20-11-2023																									*/
 /*	Need to put clear: both because class footer-wrapper is not assigned to DIV.								*/
 /*																												*/
 /* 20-11-2023																									*/
@@ -538,15 +544,17 @@
 /*************************************** COMMENTS bottomContainerWrapper ****************************************/
 	#bottomContainerWrapper
 	{
-		background: $(bottomContainerWrapper.BG.Color);
-		color: $(bottomContainerWrapper.TXT.Color);
+/*		background: $(bottomContainerWrapper.BG.Color);*/
+/*		color: $(bottomContainerWrapper.TXT.Color);*/
 
 		clear: both;
 		width: 100%;
 
 		background-color: var(--bottomContainerWrapper-BG-color, var(--root-BG-color, white ));
-<!--		color: var(--bottomContainerWrapper-TXT-color);-->
-<!--		font-family: var(--bottomContainerWrapper-TXT-font-family, var(--root-font-family, ))-->
+		font: var(--bottomContainerWrapper-TXT-font, var(--root-TXT-font, ));
+		
+/*		color: var(--bottomContainerWrapper-TXT-color);*/
+
 	}
 
 /**TEMPLATE-SKIN *********************** COMMENTS bottomContainerWrapper ****************************************/
