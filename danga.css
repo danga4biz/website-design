@@ -336,7 +336,7 @@
 		width: 100%;
 
 		background-color: var(--middleContainerWrapper-BG-color, var(--root-BG-color, white ));
-		font: var(--middleContainerWrapper-TXT-font, var(--root-TXT-font, ))-->
+		font: var(--middleContainerWrapper-TXT-font, var(--root-TXT-font, ));
 
 <!--		color: var(--middleContainerWrapper-TXT-color);-->
 	}
