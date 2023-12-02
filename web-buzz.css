@@ -1,61 +1,19 @@
 body { background: green;}
 
-/* ============================================================================================================ */
-/*						NON-BLOGGER CSS custom proerties (Variable definitions) START							*/
-/* ============================================================================================================ */
-										
-/*************************************** COMMENTS var() Function ************************************************/
-/* 22-9-2023                                                                                    				*/
-/*																												*/
-/* :root can be useful for declaring global CSS variables:														*/
-/* The :root CSS pseudo-class matches the root element of a tree representing the document.						*/
-/* In HTML, :root represents the html - element and is identical to the selector html,							*/
-/* except that its specificity is higher.																		*/
-/* 																												*/
-/*************************************** COMMENTS var() Function ************************************************/
-:root
-{
-	--main-bg-color: teal;
-	--main-txt-color: blue;
+	<!-- outerwrapper.BG.Color not needed -->
+	<Group description="outerWrapper" selector="body">
+		<Variable name="outerWrapper.BG.Color" 
+			description="Background Color" 
+			type="color" 
+			default="#FFF"  
+            value="#CEFFFF"/>
 
-	--root-BG-color: AliceBlue;
-	--root-TXT-color: Black;
-	--root-font-family: Frutiger, Baskerville, "Segoe UI", sans-serif;
-	--root-font-weight: 400;
-
-	--outerWrapper-BG-color: Azure;
-	--outerWrapper-TXT-color: DarkRed;
-	--outerWrapper-TXT-font-family: Frutiger, Baskerville, "Segoe UI", sans-serif;
-
-	--website-title-TXT-color: DarkBlue;
-	--website-title-TXT-font: Frutiger, Baskerville, "Segoe UI", sans-serif;
-
-/*		--container-items-BG-color: #3AAFA9;*/
-/*		--container-items-BG-color: #2496B2;*/
-	--container-items-BG-color: #3399cc;
-
-	--container-items-TXT-color: White;
-
-	--topMenuFlexWrapper-BG-color: #D4E4F7;
-
-	--topLineWrapper-BG-color: #D4E4F7;
-
-	--bottomLineWrapper-BG-color: #D4E4F7;
-
-	--centerBarWrapper-BG-color: #D4E4F7;
-
-	--middleContainerWrapper-BG-color: #D4E4F7;
-
-	--bottomContainerWrapper-BG-color: #D4E4F7;
-
-	--d-flyout-dropdown-BG-color: #036;
-
-}
-
-
-/* ============================================================================================================ */
-/*						NON-BLOGGER CSS custom properties (Variable definitions) END							*/
-/* ============================================================================================================ */
+		<Variable name="outerWrapper.TXT.Font" 
+			description="Text Font Styles"
+			type="font" 
+			default="normal normal 16x 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif"  
+		    value="25px Lato, Open Sans, Arial, Verdana, Sans-serif"/>
+ 	</Group>
 
 /* ============================================================================================================ */
 /* 										SETTINGS CSS START 														*/
