@@ -64,11 +64,12 @@ body { background: green;}
 /*************************************** COMMENTS outerWrapper **************************************************/
 	#outerWrapper 
 	{
-		background: $(outerWrapper.BG.Color);
-		font: $(outerWrapper.TXT.Font);
+/*		background: $(outerWrapper.BG.Color);*/
+/*		font: $(outerWrapper.TXT.Font);*/
+
+		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));
 		font: var(--outerWrapper-TXT-font-family, var(--root-font-family, ));
 
-<!--		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));-->
 <!--		color: var(--outerWrapper-TXT-color);-->
 	}
 
