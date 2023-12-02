@@ -74,7 +74,7 @@ body { background: green;}
 		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));
 		font: var(--outerWrapper-TXT-font, var(--root-TXT-font, ));
 
-<!--		color: var(--outerWrapper-TXT-color);-->
+/*		color: var(--outerWrapper-TXT-color);*/
 	}
 
 
