@@ -1,20 +1,5 @@
 body { background: green;}
 
-	<!-- outerwrapper.BG.Color not needed -->
-	<Group description="outerWrapper" selector="body">
-		<Variable name="outerWrapper.BG.Color" 
-			description="Background Color" 
-			type="color" 
-			default="#FFF"  
-            value="#CEFFFF"/>
-
-		<Variable name="outerWrapper.TXT.Font" 
-			description="Text Font Styles"
-			type="font" 
-			default="normal normal 16x 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif"  
-		    value="25px Lato, Open Sans, Arial, Verdana, Sans-serif"/>
- 	</Group>
-
 /* ============================================================================================================ */
 /* 										SETTINGS CSS START 														*/
 /* ============================================================================================================ */
