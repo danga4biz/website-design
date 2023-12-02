@@ -112,7 +112,7 @@ body { background: green;}
 /*		font: $(topLineWrapper.TXT.Font);*/
 
 		background-color: var(--topLineWrapper-BG-color, var(--root-BG-color, white ));
-		font: var(--topLineWrapper-TXT-font, var(--root-TXT-font, ))-->
+		font: var(--topLineWrapper-TXT-font, var(--root-TXT-font, ));
 
 <!--		color: var(--topLineWrapper-TXT-color);-->
 	}
