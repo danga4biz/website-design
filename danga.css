@@ -64,12 +64,13 @@
 /*************************************** COMMENTS outerWrapper **************************************************/
 	#outerWrapper 
 	{
-		background: $(outerWrapper.BG.Color);
-		font: $(outerWrapper.TXT.Font);
+/*		background: $(outerWrapper.BG.Color);*/
+/*		font: $(outerWrapper.TXT.Font);*/
 
-<!--		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));-->
+		background-color: var(--outerWrapper-BG-color, var(--root-BG-color, white ));
+		font: var(--outerWrapper-TXT-font, var(--root-TXT-font, ));
+
 <!--		color: var(--outerWrapper-TXT-color);-->
-<!--		font-family: var(--outerWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
 
 
