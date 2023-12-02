@@ -572,9 +572,15 @@ body { background: green;}
 	}
 
 
-/*************************************** COMMENTS bottomLineWrapper *********************************************/
+/*************************************** COMMENTS bottomLineWrapper *********************************************//*																												*/
+/* 2-12-2023																									*/
+/*	replace blogger background-color, font settings by variables												*/
+/*																												*/
+/* 2-12-2023																									*/
+/*	change font-family into font																				*/
 /*																												*/
 /* 20-11-2023																									*/
+
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
 /* 20-11-2023																									*/
@@ -595,13 +601,14 @@ body { background: green;}
 /*************************************** COMMENTS bottomLineWrapper *********************************************/	
 	#bottomLineWrapper 
 	{
-		background: $(bottomLineWrapper.BG.Color);
-		color: $(bottomLineWrapper.TXT.Color);
-		font: $(bottomLineWrapper.TXT.Font);
+/*		background: $(bottomLineWrapper.BG.Color);*/
+/*		color: $(bottomLineWrapper.TXT.Color);*/
+/*		font: $(bottomLineWrapper.TXT.Font);*/
 
 		background-color: var(--bottomLineWrapper-BG-color, var(--root-BG-color, white ));
+		font: var(--bottomLineWrapper-TXT-font, var(--root-TXT-font, ));
+
 <!--		color: var(--bottomLineWrapper-TXT-color);-->
-<!--		font-family: var(--bottomLineWrapper-TXT-font-family, var(--root-font-family, ))-->
 	}
 
 /**TEMPLATE-SKIN *********************** COMMENTS bottomLineWrapper *********************************************/
