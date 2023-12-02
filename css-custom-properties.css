@@ -20,7 +20,8 @@
 	--root-BG-color: AliceBlue;
 	--root-TXT-color: Black;
 	--root-font-family: Frutiger, Baskerville, "Segoe UI", sans-serif;
-	--root-font: Frutiger, Baskerville, "Segoe UI", sans-serif;
+	--root-TXT-font: Frutiger, Baskerville, "Segoe UI", sans-serif;
+	--root-TXT-font: Frutiger, Baskerville, "Segoe UI", sans-serif;
 	--root-font-weight: 400;
 
 	--outerWrapper-BG-color: Azure;
