@@ -1272,6 +1272,10 @@ display: none;
 
 /*************************************** COMMENTS block-title ***************************************************/
 /*																												*/
+/* 14-12-2023																									*/
+/*	change margin-top form ?px to 20px																			*/
+/*	change line-height from 25 px to 40 px																		*/
+/*																												*/
 /* 15-9-2023																									*/
 /*	line-height: 25px ensure the line displays below the title													*/
 /* 	margin-bottom makes space between the title and the content of the box 										*/
@@ -1281,8 +1285,10 @@ display: none;
 	{
 		font-size: 14px;
 		margin-bottom: 26px;
-		margin-top: px;
-		line-height: 25px;
+/*		margin-top: px;*/
+		margin-top: 20px;
+/*		line-height: 25px;*/
+		line-height: 40px;
 		border-bottom: 2px solid #222;
 	}
 
