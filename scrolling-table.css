@@ -166,6 +166,59 @@
 	padding: 5px;
 }
 
+/************************************** COMMENTS medium scrolling table *****************************************/
+/* 03-09-2024																									*/
+/*																												*/
+/************************************** COMMENTS medium scrolling table *****************************************/
+.scrolling-table-m
+{
+	border: 0;
+	border-collapse: separate;
+	white-space: nowrap;
+	border-color: red;
+	border-spacing: 3px;
+    width: 100%; 
+    text-align: left;	
+} 
+
+.scrolling-table-m td, .scrolling-table-m th{
+	padding: 5px;
+}
+
+
+/*	.scrolling thead is here to ensure that two rows are fixed when scrolling down */
+.scrolling-table-m thead, 
+.scrolling-table-m thead th , 
+.scrolling-table-m tfoot th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* fix the head of the first column */
+.scrolling-table-m thead th:first-child, 
+.scrolling-table-m tfoot th:first-child {
+  left: 0;
+  z-index: 3;
+}
+
+
+/* make left column fixed when scrolling */
+.scrolling-table-m tr > td:first-child {
+    position: -webkit-sticky;
+    position: sticky; 
+    left: 0; 
+}
+
+.scrolling-table-m tr td:first-of-type {
+    background-color: PowderBlue;
+}
+
+.scrolling-table-m tr th:first-of-type{
+    background-color: LightSeaGreen;
+}
+
 /****************************** COMMENTS scrolling table definitiions ***************************/
 /****************************** COMMENTS scrolling table definitiions ***************************/
 
