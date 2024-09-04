@@ -7,6 +7,10 @@
 /****************************** COMMENTS scrolling table definitiions ***************************/
 
 /****************************** COMMENTS scrollable-table ***************************************/
+/* 04-09-2024																					*/
+/*	white-space: nowrap																			*/
+/*		in table definitions ensure words do not break in columns								*/
+/*																								*/
 /* 10-10-2023																					*/
 /*	moved table definitions from post to here													*/
 /*																								*/
@@ -57,7 +61,6 @@
 /*      background: white;*/
 /*      box-sizing: border-box;*/
 /*      text-align: left;*/
-
 }
 
 /* 2-10-2023 																		*/
@@ -86,7 +89,6 @@
     position: sticky; 
     background: LightSkyBlue;
     left: 0; 
-    
 }
 
 /* make left column fixed when scrolling */
