@@ -237,14 +237,6 @@
     white-space: normal;
 }
 
-/* 13-10-2023																		*/
-/*	added different color odd rows													*/
-.scrolling-table-m tr:nth-child(odd) 
-{
-    background-color: #d2efff;
-}
-
-
 /****************************** COMMENTS scrolling table definitiions ***************************/
 /****************************** COMMENTS scrolling table definitiions ***************************/
 
