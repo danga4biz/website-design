@@ -167,7 +167,15 @@
 }
 
 /************************************** COMMENTS medium scrolling table *****************************************/
+/* 04-09-2024																									*/
+/*	white-space: nowrap																							*/
+/*		in table definitions ensure words do not break in columns												*/
+/*																												*/
+/*	word-wrap: break-word in td:first-of-type																	*/
+/*		ensures only the words in the first column break														*/
+/*																												*/
 /* 03-09-2024																									*/
+/*	scrolling-table-m needed to create a responsive table in which first column wraps							*/
 /*																												*/
 /************************************** COMMENTS medium scrolling table *****************************************/
 .scrolling-table-m
@@ -184,7 +192,6 @@
 .scrolling-table-m td, .scrolling-table-m th{
 	padding: 5px;
 }
-
 
 /*	.scrolling thead is here to ensure that two rows are fixed when scrolling down */
 .scrolling-table-m thead, 
@@ -203,21 +210,40 @@
   z-index: 3;
 }
 
+/* make left column fixed when scrolling */
+/* ensure the background color is set otherwise the column will scroll over each other */
+.scrolling-table-m tr > td:first-child {
+    position: -webkit-sticky;
+    position: sticky; 
+    background: LightSkyBlue;
+    left: 0; 
+}
 
 /* make left column fixed when scrolling */
-.scrolling-table-m tr > td:first-child {
+.scrollable-table-m tr > th:first-child {
     position: -webkit-sticky;
     position: sticky; 
     left: 0; 
 }
 
-.scrolling-table-m tr td:first-of-type {
-    background-color: PowderBlue;
-}
-
-.scrolling-table-m tr th:first-of-type{
+/* sets color of the first column in the header and footer */
+/* different from thead which is in the post */
+.scrolling-table-m th:first-of-type{
     background-color: LightSeaGreen;
 }
+
+.scrolling-table-m td:first-of-type {
+	word-wrap: break-word;
+    white-space: normal;
+}
+
+/* 13-10-2023																		*/
+/*	added different color odd rows													*/
+.scrolling-table-m tr:nth-child(odd) 
+{
+    background-color: #d2efff;
+}
+
 
 /****************************** COMMENTS scrolling table definitiions ***************************/
 /****************************** COMMENTS scrolling table definitiions ***************************/
