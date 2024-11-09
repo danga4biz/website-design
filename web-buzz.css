@@ -1586,6 +1586,18 @@ color: white;
 /* 									SETTINGS FOR BLOGGER WIDGETS START											*/
 /* ============================================================================================================ */
 
+/*************************************** COMMENTS widget css settings *******************************************/
+/*																												*/
+/* 9-11-2024																									*/
+/*	Need to set space between Adsense widget and Blog widget													*/
+/*	Widgets are dived through a class that is automatically created from the widget type. Classes can be:		*/
+/*		widget Blog																								*/
+/*		widget AdSense																							*/
+/*		widget BlogSearch																						*/
+/*		widget FeaturedPost																						*/
+/*		widget HTML																								*/
+/*	To add an extra space use margin-top setting																*/
+/*************************************** COMMENTS widget css settings *******************************************/
 
 body .Blog {margin-top: 10px}
 
