@@ -608,7 +608,7 @@
 		background-color: var(--bottomLineWrapper-BG-color, var(--root-BG-color, white ));
 		font: var(--bottomLineWrapper-TXT-font, var(--root-TXT-font, ));
 
-<!--		color: var(--bottomLineWrapper-TXT-color);-->
+/*		color: var(--bottomLineWrapper-TXT-color);*/
 	}
 
 /**TEMPLATE-SKIN *********************** COMMENTS bottomLineWrapper *********************************************/
