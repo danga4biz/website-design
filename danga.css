@@ -257,7 +257,7 @@
 		background-color: var(--topMenuFlexWrapper-BG-color, var(--root-BG-color, white ));
 		font: var(--topMenuFlexWrapper-TXT-font, var(--root-TXT-font, ));
 
-<!--		color: var(--topMenuFlexWrapper-TXT-color);-->
+/*		color: var(--topMenuFlexWrapper-TXT-color);*/
 	}
 
 
