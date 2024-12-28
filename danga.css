@@ -400,7 +400,7 @@
 		background-color: var(--centerBarWrapper-BG-color, var(--root-BG-color, white ));
 		font: var(--centerBarWrapper-TXT-font, var(--root-TXT-font, ));
 		
-<!--		color: var(--centerBarWrapper-TXT-color);-->
+/*		color: var(--centerBarWrapper-TXT-color);*/
  	}
 
 /**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
