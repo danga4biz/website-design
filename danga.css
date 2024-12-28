@@ -852,6 +852,10 @@ display: none;
 
 /*************************************** COMMENTS header-wrapper ************************************************/
 /*																												*/
+/* 28-12-2024																									*/
+/*	Setting padding-left or -right on the header-wrapper has no effect when padding-left/right is set on		*/
+/*	flex-container																								*/
+/*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
 /*																												*/
