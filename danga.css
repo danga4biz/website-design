@@ -853,8 +853,10 @@ display: none;
 /*************************************** COMMENTS header-wrapper ************************************************/
 /*																												*/
 /* 28-12-2024																									*/
-/*	Setting padding-left or -right on the header-wrapper has no effect when padding-left/right is set on		*/
+/*	- Setting padding-left or -right on the header-wrapper has no effect when padding-left/right is set on		*/
 /*	flex-container																								*/
+/*	- The padding-left/right on the flex-container ensures that the bottomMenuFlex indents from the				*/
+/*	outerWrapper																								*/
 /*																												*/
 /* 20-11-2023																									*/
 /*	SEE ALSO FOR MOBILE SCREEN SIZES																			*/
@@ -1201,8 +1203,10 @@ display: none;
 /*************************************** COMMENTS flex-container ************************************************/
 /*																												*/
 /* 28-12-2024																									*/
-/*	Setting padding-left or -right on the header-wrapper has no effect when padding-left/right is set on		*/
+/*	- Setting padding-left or -right on the header-wrapper has no effect when padding-left/right is set on		*/
 /*	flex-container																								*/
+/*	- The padding-left/right on the flex-container ensures that the bottomMenuFlex indents from the				*/
+/*	outerWrapper																								*/
 /*																												*/
 /* 30-9-2023																									*/
 /*	change padding from 5% into 1% such that it looks prettier on mobile										*/
