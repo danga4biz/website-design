@@ -1200,6 +1200,10 @@ display: none;
 
 /*************************************** COMMENTS flex-container ************************************************/
 /*																												*/
+/* 28-12-2024																									*/
+/*	Setting padding-left or -right on the header-wrapper has no effect when padding-left/right is set on		*/
+/*	flex-container																								*/
+/*																												*/
 /* 30-9-2023																									*/
 /*	change padding from 5% into 1% such that it looks prettier on mobile										*/
 /*																												*/
