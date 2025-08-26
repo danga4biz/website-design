@@ -7,19 +7,6 @@
 
 
 /*** BEGIN *** CSS topContainerWrapper, topContainerLeft, topContainerRight *****************************************/
-    #topContainerWrapper
-	{
-/*		background: lightblue;*/
-background-color: aqua;
-		display: flex;
-/*		justify-content: space-around; /* houdt ruimte tussen de blokken en met de zijkant - niet nodig */*/
-/*		justify-content: space-between; /* houdt ruimte tussen de blokken */   */
-		justify-content: flex-start; /* items komen naast elkaar, geen extra ruimte tussen */
-		align-items: center; /* hoe worden items verticaal uitgelijnd als je flex-direction: row gebruikt). */
-/*		width: 100%; niet nodig al aanwezig in de class container-wrapper */
-	}
-
-/*** BEGIN *** CSS topContainerWrapper, topContainerLeft, topContainerRight *****************************************/
 /*																													*/
 /* 26-08-2025																										*/
 /*		header-wrapper vervangen door container-wrapper																*/
