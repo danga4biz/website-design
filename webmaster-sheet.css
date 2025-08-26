@@ -2,3 +2,5 @@
 {
     background-color: purple;
 }
+
+@import url(&quot;https://danga4biz.github.io/website-design/webmaster-template-skin-reset.css&quot;) layer(base); 
