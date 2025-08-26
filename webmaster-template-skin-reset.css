@@ -4,6 +4,10 @@
 
 /**TEMPLATE-SKIN *********************** COMMENTS topContainerWrapper *******************************************/
 /*																												*/
+/* 26-08-2025 VERVANG BORDER-STYLE door BORDER																	*/
+/*		border: none																							*/
+/*			Verwijdert ALLES: style, width, en color															*/
+/*																												*/
 /* 24-08-2025																									*/
 /*	Added to replace topMenuFlexWrapper																			*/
 /*																												*/
@@ -13,10 +17,20 @@
 /*																												*/
 /*		setting: border-color, border-top-style, border-width													*/
 /*																												*/
+/*		border-style: none																						*/
+/*			Zet alle border stijlen op none:																	*/
+/*			- border-top-style, border-right-style, border-bottom-style, border-left-style						*/
+/*																												*/
+/*			Zegt geen rand renderen, zelfs als border-width en border-color nog bestaan.						*/
+/*																												*/
+/*			border-width: 2px blijft technisch bestaan.															*/
+/*			border-color: green blijft bestaan.																	*/
+*/																												*/
 /*************************************** COMMENTS topContainerWrapper *******************************************/
 	#topContainerWrapper
 	{
-		border-style: none;
+/*		border-style: none;*/
+		border: none;
 	}
 
 	#topContainerWrapper
