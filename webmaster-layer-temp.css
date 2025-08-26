@@ -24,9 +24,7 @@
 	#topContainerLeft,
 	#topContainerRight
 	{
-/*		background-color: yellow;*/
-/*		border-color: green;*/
-/*		border-style: solid;*/
+		background-color: yellow;
 	}
 
 	/* LET OP: DEZE GAAN WE MISSCHIEN VERVANGEN DOOR FLEX-CONTAINER CLASS 								*/
