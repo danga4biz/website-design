@@ -1,6 +1,7 @@
+@import url(&quot;https://danga4biz.github.io/website-design/webmaster-template-skin-reset.css&quot;) layer(base);
+
 #topContainerWrapper
 {
     background-color: pink;
 }
 
-@import url(&quot;https://danga4biz.github.io/website-design/webmaster-template-skin-reset.css&quot;) layer(base);
