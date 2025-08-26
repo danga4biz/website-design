@@ -1,0 +1,13 @@
+/* ================================================================================================================ */
+/* BEGIN - LAYER TEMP DEFINITIES 																					*/
+/*																													*/
+/* 18-08-2025 LAYER TEMP STAAT ALS LAATSTE IN DE LAYERING, KAN GEBRUIKT WORDEN VOOR TEST DOELEINDEN					*/
+/*		ALVORENS CSS OVER TE ZETTEN NAAR DEFINITIEVE PLEK															*/
+/* ================================================================================================================ */
+
+
+	#topContainerWrapper
+	{
+		border-style: none;
+background-color: crimson;
+	}
