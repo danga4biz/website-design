@@ -18,3 +18,62 @@ background-color: aqua;
 		align-items: center; /* hoe worden items verticaal uitgelijnd als je flex-direction: row gebruikt). */
 /*		width: 100%; niet nodig al aanwezig in de class container-wrapper */
 	}
+
+/*** BEGIN *** CSS topContainerWrapper, topContainerLeft, topContainerRight *****************************************/
+/*																													*/
+/* 26-08-2025																										*/
+/*		header-wrapper vervangen door container-wrapper																*/
+/*		topContainerLeft en topContainerRight opgezet als flex														*/
+/*																													*/
+/* 24-08-2025 DEZE OPMERKING MAG STRAKS WEG																			*/
+/*		LET OP: ER GAAT NOG IETS FOUT DOORDAT de header-wrapper in de base layer een float etc heeft				*/
+/*		en we werken hier met een flex-box.																			*/
+/*																													*/
+/*		Als ik de header-wrapper anders definieer geen float etc.. dan ontstaat een ruimte tussen left en right		*/
+/*			of verdwijnt de topContainerWrapper helemaal															*/
+/*		Anders gezegd ik denk dat de bestaande header-wrapper niet kan werken met deze.								*/
+/*																													*/
+/********************************************************************************************************************/ 
+	#topContainerLeft,
+	#topContainerRight
+	{
+/*		background-color: yellow;*/
+/*		border-color: green;*/
+/*		border-style: solid;*/
+	}
+
+	/* LET OP: DEZE GAAN WE MISSCHIEN VERVANGEN DOOR FLEX-CONTAINER CLASS 								*/
+	#topContainerWrapper
+	{
+/*		background: lightblue;*/
+background-color: red;
+		display: flex;
+/*		justify-content: space-around; /* houdt ruimte tussen de blokken en met de zijkant - niet nodig */*/
+/*		justify-content: space-between; /* houdt ruimte tussen de blokken */   */
+		justify-content: flex-start; /* items komen naast elkaar, geen extra ruimte tussen */
+		align-items: center; /* hoe worden items verticaal uitgelijnd als je flex-direction: row gebruikt). */
+/*		width: 100%; niet nodig al aanwezig in de class container-wrapper */
+	}
+
+/*** topContainerLeft ***/
+	#topContainerLeft
+	{ 
+		flex-grow: 0; /* element mag NIET groeien om extra ruimte op te vullen */
+		flex-shrink: 1; /* mag beperkt krimpen */
+		flex-basis: auto; /* breedte gebaseerd op inhoud */
+		white-space: nowrap;  /* voorkomt afbreken van logo/tekst */
+	} 
+
+/*** topContainerRight ***/
+	#topContainerRight
+	{ 
+		flex-grow: 1; /* element mag groeien om beschikbare ruimte op te vullen */
+		flex-shrink: 1; /* krimp als het nodig is */
+		flex-basis: 0; /* start met 0 breedte */
+		min-width: 0; /* mag krimpen, tot nul pixels breed als dat nodig is — zelfs als je inhoud breder is */
+		white-space: nowrap; /* voorkomt afbreken naar nieuwe regel */
+overflow-x: auto; /* toont een horizontale scrollbar onderaan topContainerRight */
+/*scrollbar-gutter: stable; /* reserveert ruimte voor de scrollbar, zodat je layout niet verspringt als hij verschijnt */*/
+	} 
+/*** END *** CSS topContainerLeft, topContainerRight ****************************************************************/
+
