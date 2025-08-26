@@ -1,0 +1,16 @@
+/**TEMPLATE-SKIN *********************** COMMENTS topContainerWrapper *******************************************/
+/*																												*/
+/* 24-08-2025																									*/
+/*	Added to replace topMenuFlexWrapper																			*/
+/*																												*/
+/* 20-11-2023																									*/
+/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
+/*	otherwise it is also displayed on the website																*/
+/*																												*/
+/*		setting: border-color, border-top-style, border-width													*/
+/*																												*/
+/*************************************** COMMENTS topContainerWrapper *******************************************/
+	#topContainerWrapper
+	{
+		border-style: none;
+	}
