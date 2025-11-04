@@ -120,6 +120,8 @@
 	
 
 /**TEMPLATE-SKIN *********************** COMMENTS topLineWrapper ************************************************/
+/* 03-11-2025 #layout applied - style removed																	*/
+/*																												*/
 /*																												*/
 /* 20-11-2023																									*/
 /*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
@@ -130,7 +132,7 @@
 /*************************************** COMMENTS topLineWrapper ************************************************/
 	#topLineWrapper
 	{
-		border-style: none;
+/*		border-style: none;*/
 	}
 
 /*************************************** COMMENTS topLineLeft ***************************************************/
