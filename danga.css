@@ -118,23 +118,6 @@
 /*		color: var(--topLineWrapper-TXT-color);*/
 	}
 	
-
-/**TEMPLATE-SKIN *********************** COMMENTS topLineWrapper ************************************************/
-/* 03-11-2025 #layout applied - style removed																	*/
-/*																												*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
-/*	otherwise it is also displayed on the website																*/
-/*																												*/
-/*		setting: border-color, border-top-style, border-width													*/
-/*																												*/
-/*************************************** COMMENTS topLineWrapper ************************************************/
-	#topLineWrapper
-	{
-/*		border-style: none;*/
-	}
-
 /*************************************** COMMENTS topLineLeft ***************************************************/
 /*																												*/
 /* 16-11-2023																									*/
@@ -263,22 +246,6 @@
 	}
 
 
-/**TEMPLATE-SKIN *********************** COMMENTS topMenuFlexWrapper ********************************************/
-/* 03-11-2025 #layout applied - style removed																	*/
-/*																												*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
-/*	otherwise it is also displayed on the website																*/
-/*																												*/
-/*		setting: border-color, border-top-style, border-width													*/
-/*																												*/
-/*************************************** COMMENTS topMenuFlexWrapper ********************************************/
-	#topMenuFlexWrapper
-	{
-/*		border-style: none;*/
-	}
-
 /*************************************** COMMENTS topMenuFlex1***************************************************/
 /*																												*/
 /* 23-11-2023																									*/
@@ -346,23 +313,6 @@
 <!--		color: var(--middleContainerWrapper-TXT-color);-->
 	}
 
-/**TEMPLATE-SKIN *********************** COMMENTS middleContainerWrapper ****************************************/
-/* 03-11-2025 #layout applied - style removed																	*/
-/*																												*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border that are used for the template layout						*/
-/*	otherwise they are also displayed on the website															*/
-/*																												*/
-/* 16-11-2023																									*/
-/*	Needed in template-skin to set the parameters for the template layout.										*/
-/*		parameters: border-color, border-top-style, border-width												*/
-/*																												*/
-/*************************************** COMMENTS middleContainerWrapper ****************************************/
-	#middleContainerWrapper
-	{
-/*		border-style: none;*/
-	}
 
 /*************************************** COMMENTS middleContainer ***********************************************/
 /* 22-11-2023																									*/
@@ -408,22 +358,6 @@
 		
 /*		color: var(--centerBarWrapper-TXT-color);*/
  	}
-
-/**TEMPLATE-SKIN *********************** COMMENTS centerBarWrapper **********************************************/
-/* 03-11-2025 #layout applied - style removed																	*/
-/*																												*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
-/*	otherwise it is also displayed on the website																*/
-/*																												*/
-/*		setting: border-color, border-top-style, border-width													*/
-/*																												*/
-/*************************************** COMMENTS centerBarWrapper **********************************************/
-	#centerBarWrapper
-	{
-/*		border-style: none;*/
-	}
 
 /*************************************** COMMENTS centerBarLeft *************************************************/
 /*																												*/
@@ -566,21 +500,6 @@
 
 	}
 
-/**TEMPLATE-SKIN *********************** COMMENTS bottomContainerWrapper ****************************************/
-/* 03-11-2025 #layout applied - style removed																	*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
-/*	otherwise it is also displayed on the website																*/
-/*																												*/
-/*		setting: border-color, border-top-style, border-width													*/
-/*																												*/
-/*************************************** COMMENTS bottomContainerWrapper ****************************************/
-	#bottomContainerWrapper
-	{
-/*		border-style: none;*/
-	}
-
 
 /*************************************** COMMENTS bottomLineWrapper *********************************************/*																												*/
 /* 2-12-2023																									*/
@@ -619,21 +538,6 @@
 		font: var(--bottomLineWrapper-TXT-font, var(--root-TXT-font, ));
 
 /*		color: var(--bottomLineWrapper-TXT-color);*/
-	}
-
-/**TEMPLATE-SKIN *********************** COMMENTS bottomLineWrapper *********************************************/
-/* 03-11-2025 #layout applied - style removed																	*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
-/*	otherwise it is also displayed on the website																*/
-/*																												*/
-/*		setting: border-color, border-top-style, border-width													*/
-/*																												*/
-/*************************************** COMMENTS bottomLineWrapper *********************************************/
-	#bottomLineWrapper
-	{
-/*		border-style: none;*/
 	}
 
 /*************************************** COMMENTS bottomLineMiddle **********************************************/
@@ -681,20 +585,6 @@
 display: none;
  	}
 
-/**TEMPLATE-SKIN *********************** COMMENTS topBarWrapper *************************************************/
-/* 03-11-2025 #layout applied - style removed - even the disable elements										*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
-/*	otherwise it is also displayed on the website																*/
-/*																												*/
-/*		setting: border-color, border-top-style, border-width													*/
-/*																												*/
-/*************************************** COMMENTS topBarWrapper *************************************************/
-	#topBarWrapper
-	{
-/*		border-style: none;*/
-	}
 
 /*************************************** COMMENTS topBarLeft ****************************************************/
 /*																												*/
@@ -756,20 +646,6 @@ width: 50%;
 display: none;
  	}
 
-/**TEMPLATE-SKIN *********************** COMMENTS bottomBarWrapper **********************************************/
-/* 03-11-2025 #layout applied - style removed - even the disable elements										*/
-/*																												*/
-/* 20-11-2023																									*/
-/*	Needed here to REMOVE the settings of the border in template-skin that is used for the template layout		*/
-/*	otherwise it is also displayed on the website																*/
-/*																												*/
-/*		setting: border-color, border-top-style, border-width													*/
-/*																												*/
-/*************************************** COMMENTS bottomBarWrapper **********************************************/
-	#bottomBarWrapper
-	{
-/*		border-style: none;*/
-	}
 
 
 /*************************************** COMMENTS bottomBarLeft *************************************************/
@@ -828,42 +704,6 @@ display: none;
 			top: 0;
 	}
 
-
-/*************************************** COMMENTS breadcrumbs ***************************************************/	
-/* 30-11-2023																									*/
-/*	remove the color of the a:link																				*/
-/*		because breadcrumbs.link.color (#CEFFFF) is not readable												*/
-/*																												*/
-/*		when removed the  a:-webkit-any-link { color: -webkit-link; will take over								*/
-/*																												*/
-/* 1-9-2022 																									*/
-/*	define the a: settings for the breadcrumbs																	*/
-/*																												*/
-/* 1-9-2022																										*/
-/*	link replaced by menu.link																					*/
-/*																												*/
-
-/* 25-7-2023 																									*/
-/*	replace .section-wrapper by breadcrumbs-wrapper																*/
-/*																												*/
-/*************************************** COMMENTS breadcrumbs ***************************************************/	
-	.breadcrumbs-wrapper .breadcrumbs a:link
-		{
-			text-decoration: none;
-/*			color: $(breadcrumbs.link.color);*/
-		}
-
-	.breadcrumbs-wrapper .breadcrumbs a:visited
-		{
-			text-decoration: none;
-			color: $(breadcrumbs.link.visited.color);
-		}
-
-	.breadcrumbs-wrapper .breadcrumbs a:hover 
-		{
-			text-decoration: underline;
-			color: $(breadcrumbs.link.hover.color);
-		}
 
 
 /*************************************** COMMENTS header-wrapper ************************************************/
